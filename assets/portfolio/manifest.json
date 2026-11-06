@@ -1,0 +1,506 @@
+[
+ {
+  "project": "00-cover-spiral-staircase",
+  "file": "00-cover-spiral-staircase/p01-1.jpeg",
+  "page": 1,
+  "w": 932,
+  "h": 800
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p02-1.jpeg",
+  "page": 2,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p02-2.jpeg",
+  "page": 2,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p02-3.jpeg",
+  "page": 2,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p03-1.jpeg",
+  "page": 3,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p03-2.jpeg",
+  "page": 3,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "boca-raton-residence-2025",
+  "file": "boca-raton-residence-2025/p03-3.jpeg",
+  "page": 3,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p04-1.jpeg",
+  "page": 4,
+  "w": 1019,
+  "h": 1266
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p04-2.jpeg",
+  "page": 4,
+  "w": 1019,
+  "h": 1266
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p04-3.jpeg",
+  "page": 4,
+  "w": 695,
+  "h": 1266
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p05-1.jpeg",
+  "page": 5,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p05-2.jpeg",
+  "page": 5,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "biscayne-blvd-residence-miami-2025",
+  "file": "biscayne-blvd-residence-miami-2025/p05-3.jpeg",
+  "page": 5,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p06-1.jpeg",
+  "page": 6,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p06-2.jpeg",
+  "page": 6,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p06-3.jpeg",
+  "page": 6,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p07-1.jpeg",
+  "page": 7,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p07-2.jpeg",
+  "page": 7,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p07-3.jpeg",
+  "page": 7,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p08-1.jpeg",
+  "page": 8,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p08-2.jpeg",
+  "page": 8,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "parkland-residence-2025",
+  "file": "parkland-residence-2025/p08-3.jpeg",
+  "page": 8,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "fort-lauderdale-kitchen-2025",
+  "file": "fort-lauderdale-kitchen-2025/p09-1.jpeg",
+  "page": 9,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "fort-lauderdale-kitchen-2025",
+  "file": "fort-lauderdale-kitchen-2025/p09-2.jpeg",
+  "page": 9,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "fort-lauderdale-kitchen-2025",
+  "file": "fort-lauderdale-kitchen-2025/p09-3.jpeg",
+  "page": 9,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p10-1.jpeg",
+  "page": 10,
+  "w": 1028,
+  "h": 664
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p10-2.jpeg",
+  "page": 10,
+  "w": 1028,
+  "h": 674
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p11-1.jpeg",
+  "page": 11,
+  "w": 1156,
+  "h": 753
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p11-2.jpeg",
+  "page": 11,
+  "w": 1156,
+  "h": 772
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p12-1.jpeg",
+  "page": 12,
+  "w": 1118,
+  "h": 760
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p12-2.jpeg",
+  "page": 12,
+  "w": 1111,
+  "h": 750
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p13-1.jpeg",
+  "page": 13,
+  "w": 1028,
+  "h": 751
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p13-2.jpeg",
+  "page": 13,
+  "w": 1156,
+  "h": 765
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p14-1.jpeg",
+  "page": 14,
+  "w": 1156,
+  "h": 756
+ },
+ {
+  "project": "cape-coral-house-2024",
+  "file": "cape-coral-house-2024/p14-2.jpeg",
+  "page": 14,
+  "w": 1081,
+  "h": 733
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p15-1.jpeg",
+  "page": 15,
+  "w": 531,
+  "h": 1024
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p15-2.jpeg",
+  "page": 15,
+  "w": 560,
+  "h": 1024
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p15-3.jpeg",
+  "page": 15,
+  "w": 561,
+  "h": 1024
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p15-4.jpeg",
+  "page": 15,
+  "w": 589,
+  "h": 1024
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p16-1.jpeg",
+  "page": 16,
+  "w": 720,
+  "h": 960
+ },
+ {
+  "project": "fort-lauderdale-bedroom-2024",
+  "file": "fort-lauderdale-bedroom-2024/p16-2.jpeg",
+  "page": 16,
+  "w": 720,
+  "h": 960
+ },
+ {
+  "project": "miami-beach-nursery-cabinet-2024",
+  "file": "miami-beach-nursery-cabinet-2024/p17-1.jpeg",
+  "page": 17,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "miami-beach-nursery-cabinet-2024",
+  "file": "miami-beach-nursery-cabinet-2024/p17-2.jpeg",
+  "page": 17,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "miami-beach-nursery-cabinet-2024",
+  "file": "miami-beach-nursery-cabinet-2024/p17-3.jpeg",
+  "page": 17,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "crystal-tower-hollywood-beach-2024",
+  "file": "crystal-tower-hollywood-beach-2024/p18-1.jpeg",
+  "page": 18,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "crystal-tower-hollywood-beach-2024",
+  "file": "crystal-tower-hollywood-beach-2024/p18-2.jpeg",
+  "page": 18,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "crystal-tower-hollywood-beach-2024",
+  "file": "crystal-tower-hollywood-beach-2024/p18-3.jpeg",
+  "page": 18,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p19-1.jpeg",
+  "page": 19,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p19-2.jpeg",
+  "page": 19,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p19-3.jpeg",
+  "page": 19,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p20-1.jpeg",
+  "page": 20,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p20-2.jpeg",
+  "page": 20,
+  "w": 972,
+  "h": 1208
+ },
+ {
+  "project": "pembroke-pines-residence-2023",
+  "file": "pembroke-pines-residence-2023/p20-3.jpeg",
+  "page": 20,
+  "w": 902,
+  "h": 1208
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p21-1.jpeg",
+  "page": 21,
+  "w": 1630,
+  "h": 872
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p21-2.jpeg",
+  "page": 21,
+  "w": 783,
+  "h": 414
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p22-1.jpeg",
+  "page": 22,
+  "w": 1263,
+  "h": 1427
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p22-2.jpeg",
+  "page": 22,
+  "w": 1146,
+  "h": 1160
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p23-1.jpeg",
+  "page": 23,
+  "w": 1331,
+  "h": 1097
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p23-2.jpeg",
+  "page": 23,
+  "w": 1029,
+  "h": 1109
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-1.jpeg",
+  "page": 24,
+  "w": 935,
+  "h": 655
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-2.jpeg",
+  "page": 24,
+  "w": 744,
+  "h": 664
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-3.jpeg",
+  "page": 24,
+  "w": 487,
+  "h": 1140
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-4.jpeg",
+  "page": 24,
+  "w": 527,
+  "h": 304
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-5.jpeg",
+  "page": 24,
+  "w": 1602,
+  "h": 657
+ },
+ {
+  "project": "gorhan-design-studio-center-miami-2023",
+  "file": "gorhan-design-studio-center-miami-2023/p24-6.jpeg",
+  "page": 24,
+  "w": 606,
+  "h": 727
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p25-1.jpeg",
+  "page": 25,
+  "w": 1600,
+  "h": 957
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p26-1.jpeg",
+  "page": 26,
+  "w": 960,
+  "h": 618
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p26-2.jpeg",
+  "page": 26,
+  "w": 960,
+  "h": 617
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p26-3.jpeg",
+  "page": 26,
+  "w": 960,
+  "h": 545
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p26-4.jpeg",
+  "page": 26,
+  "w": 960,
+  "h": 546
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p27-1.jpeg",
+  "page": 27,
+  "w": 1440,
+  "h": 961
+ },
+ {
+  "project": "armani-casa-sunny-isles-2023",
+  "file": "armani-casa-sunny-isles-2023/p28-1.jpeg",
+  "page": 28,
+  "w": 1440,
+  "h": 960
+ }
+]
