@@ -36,7 +36,7 @@ ekranda okunan bir cümle olacak.
 
 ---
 
-## 2 · 3D yaklaşımı: üç seçenek (KARAR GEREKİYOR)
+## 2 · 3D yaklaşımı: üç seçenek (KARAR: C · Hibrit, kullanıcı 2026-11-06)
 
 ### A · Higgsfield "scroll-scrub" filmi
 Higgsfield'ın kendi animated-website yöntemi: tek, kesintisiz, ~15 sn'lik bir
@@ -58,7 +58,7 @@ kuşbakışı plan anı.
   MCP ile yapılabilir). Malzeme aşamasında fotogerçekçilik sınırlı. GPU yükü
   ve WebGL fallback'i gerekir.
 
-### C · Hibrit (önerim)
+### C · Hibrit ✅ SEÇİLDİ
 B omurga olur. Higgsfield'ı gerçek zamanlının zayıf kaldığı yerlerde kullanırız:
 1. **Malzeme reveal anı (bölüm 5–6):** Gerçek zamanlı sahneden tam o kamera
    açısıyla bir kare render edilir, `start_image` olarak videoya verilir. Video
@@ -71,6 +71,83 @@ B omurga olur. Higgsfield'ı gerçek zamanlının zayıf kaldığı yerlerde kul
 Neden C: Tiny Villa hissini (gerçek 3D, orbit, plan anı) birebir verir. Higgsfield
 sadece en zor anda devreye girer. WebGL yoksa poster görselleriyle tam içerik
 yine okunur.
+
+---
+
+## 2b · Hibrit (C) uygulama detayı
+
+### Temel kural: gerçek zamanlı sahne hep tek renk kalır
+3D sahne baştan sona **beyaz kil maket**. Renk yalnızca iki yerden gelir:
+Higgsfield reveal klibi ve gerçek proje fotoğrafları. Tiny Villa'nın
+gri-maket / renkli-fotoğraf kontrastı böylece korunur. Ayrıca gerçek zamanlı
+sahne için PBR doku üretmek gerekmez (en pahalı ve en riskli iş ortadan kalkar).
+Tek istisna: kapanış (Contact) anında maketin içinde yanan sıcak LED şerit
+ışığı (`--glow`), markanın imza detayı.
+
+### Parça 1 · Gerçek zamanlı maket (React Three Fiber)
+- **Mekan:** Açık plan mutfak + oturma alanı + media wall. Portfolyonun en güçlü
+  olduğu üç tipolojiyi tek hacimde birleştirir (Biscayne / Pembroke tarzı
+  ada, Boca tarzı media wall). Hiçbir müşterinin evinin kopyası değil.
+- **Geometri:** Küçük bir plan JSON'undan prosedürel üretim: duvarlar
+  (extrude), döşeme, açıklıklar. Dolaplar parametrik modüller: alt, boy, üst,
+  yivli ada cephesi (instanced silindirler). Prosedürel yetmezse Blender MCP ile
+  modelleyip GLB'ye çevir.
+- **Aksesuarlar:** Sarkıt lamba, bar taburesi, seramik vazo. Higgsfield
+  image-to-3D (Meshy 7 / Tripo H3.1) ile GLB, tek renk kil malzemeyle override.
+- **Görünüm:** Mat beyaz malzeme (roughness ~0.9), N8AO/SSAO, yumuşak temas
+  gölgeleri, ACES veya AgX tone mapping, ~0.12 grain, dar fov (18–22°).
+- **Bölüm 3 · Plan:** Kamera tepeye çıkar. Duvar yüksekliği ~0'a iner, sahne
+  çizgi kalınlığında bir kat planı gibi okunur. Üstüne ince ölçü çizgileri
+  çizilir (Gorhan planlarındaki kırmızı not dili referans alınabilir).
+- **Bölüm 4 · Built to be built:** Duvarlar yükselir (`scale.y` 0 → 1),
+  dolap modülleri patlatılmış görünümden yerlerine kayar.
+- **Kamera:** Bölüm sınırlarına bağlı keyframe tablosu. Her `<section>` için
+  GSAP ScrollTrigger ilerlemesi timeline'a aktarılır (Tiny Villa'nın anchor
+  mantığı). Desktop'ta Lenis, mobilde native scroll ve ayrı kamera yolu.
+
+### Parça 2 · Maketten gerçeğe reveal klibi (Higgsfield, seam-locked)
+1. **Reveal pozunu sabitle:** Bölüm 5'in başında kameranın duracağı poz `P`
+   (desktop 16:9) ve `P_m` (mobil 9:16).
+2. **Kil karesini render et:** Gerçek zamanlı sahneyi `P` pozunda 1920×1080
+   (mobilde 1080×1920) PNG olarak dışa aktar. Bu, videonun ilk karesi olacak.
+3. **Bitiş karesini önce görsel olarak üret ve onaylat:** `generate_image`'a kil
+   karesini referans ver, aynı kadrajda bitmiş mekanı iste. Ceviz/meşe, kuvars,
+   sıcak LED şerit, Güney Florida gün ışığı (paletteki hex'lerle). Ucuz;
+   kullanıcı onaylayana kadar en fazla 2 yeniden üretim.
+4. **Videoyu üret:** `start_image` = kil karesi, `end_image` = onaylı bitiş
+   karesi. Tek yavaş push-in (ya da sabit kamera), malzemeler yüzeylere akar.
+   6–8 sn, 1080p (Seedance 2.0'da 4K seçeneği var), ses kapalı, "no cuts, no
+   camera shake, locked exposure, no text". Mobil için aynı akış 9:16 olarak ayrıca.
+5. **Encode:** `03`'teki scrub kuralları: desktop GOP 8 CRF~20, mobil GOP 4
+   CRF~23, ses yok, `faststart`. Poster = encode edilmiş klibin ilk karesi.
+6. **Sayfada devir teslim:** Scroll bölüm 5'e girince kamera `P`'ye kilitlenir.
+   Canvas ~300 ms çapraz geçişle videoya devreder. Video ilk karesi kil karesiyle
+   aynı olduğu için geçiş görünmez. Bölüm 5–6 boyunca video scroll ile oynar,
+   son karede gerçek fotoğraf üçlüsüne (Concept · Development · Installed) geçilir.
+   Geri scroll'da aynı yol tersine çalışır.
+7. **Bütçe:** reveal klibi desktop ≤ 12 MB, mobil ≤ 6 MB.
+
+### Parça 3 · Diğer Higgsfield işleri
+- Stil kareleri: kil maket görünümü ve reveal bitişi (onay için, ucuz).
+- Portfolyo upscale: sadece orijinaller gelmezse. Sonuç gözle kontrol edilir.
+- OG / paylaşım kapağı.
+- Opsiyonel: ham mutfak videosundan stabil bir referans kaydı (dürüstlük
+  kuralına uyarak, `02`).
+
+### Fallback'ler
+- **WebGL yok:** Her bölüm için gerçek zamanlı sahneden önceden render edilmiş
+  poster kareleri (build sırasında üretilir) + reveal klibi normal çalışır. İçerik eksiksiz.
+- **`prefers-reduced-motion`:** Orbit yok, video isteği yok. Poster kareleri ve
+  bitiş karesi statik gösterilir.
+- **Zayıf GPU:** FPS < 50 iken DPR düşer, AO kapanır. Mobilde gölgeler bake edilir.
+
+### Bütçe hedefleri
+| Kalem | Hedef |
+|---|---|
+| Sahne GLB'leri toplamı (Draco/Meshopt) | < 3 MB |
+| İlk anlamlı boyama (3D'siz içerik) | < 1.5 sn |
+| Reveal klibi | desktop ≤ 12 MB, mobil ≤ 6 MB (yalnızca bölüm 4'e yaklaşınca yüklenir) |
+| Higgsfield | Her üretimden önce maliyeti kontrol et. Toplamı 840 kredinin makul bir kısmında tut |
 
 ---
 
@@ -211,7 +288,7 @@ metinde temiz bir grotesk. Font seçimi tasarım aşamasında yapılacak.
 13. Instagram ve Google Business Profile linkleri, müşteri yorumları, kurucu portresi.
 
 **Teknik kararlar (bizim):**
-14. 3D yaklaşımı: A, B veya **C (öneri)**.
+14. ~~3D yaklaşımı~~ → **C · Hibrit seçildi** (2026-11-06). Detay §2b.
 15. Hosting: Vercel mi?
 16. Framework: Next.js mi?
 

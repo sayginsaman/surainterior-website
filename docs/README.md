@@ -19,6 +19,7 @@ yapılmadı (kullanıcı talimatı).
 ## Kesin kararlar
 
 - **Türkiye projelerinin görselleri kullanılmayacak.** Sadece ABD projeleri (kullanıcı, 2026-11-06).
+- **3D yaklaşımı: C · Hibrit** (kullanıcı, 2026-11-06). Gerçek zamanlı kil maket sahnesi omurga; Higgsfield sadece malzeme reveal klibi, aksesuar GLB'leri, upscale ve OG için. Detay: `04` §2b.
 - Site kodu bu repoda yaşar. Higgsfield sadece asset üretimi için (görsel, video, 3D, upscale).
 - Kaynak PDF'ler ve `docs/private/` public repoya gitmez.
 
