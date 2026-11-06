@@ -1,0 +1,17 @@
+# Source documents from the client. The GitHub repo is PUBLIC, and these hold
+# pricing, revenue targets and a home address. Keep them local.
+*.pdf
+docs/private/
+
+# OS / editor
+.DS_Store
+.gstack/
+
+# Build output (for later)
+node_modules/
+dist/
+.next/
+.vercel/
+.env
+.env.*
+!.env.example
