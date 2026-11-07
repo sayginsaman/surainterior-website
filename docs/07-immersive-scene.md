@@ -27,17 +27,21 @@ hissi korunsun ama render yerine gerçek mekan kullanılsın.
 | K2 | 1-6 | Ocak duvarı, taş backsplash, bahçe pencereleri |
 | K3 | 1-12 | Pencere köşesi: vazo, espresso makinesi, bahçe |
 
-| Segment | Hareket | Süre |
-|---|---|---|
-| a | K0 → K1, ileri ve hafif sağa dolly | 6 sn |
-| b | K1 → K2, adanın ucunun etrafında sağa dönüş | 8 sn |
-| c | K2 → K3, tezgah boyunca pencereye kayma | 6 sn |
-| d | K3'ten bahçe ışığına yavaş push-in (sadece start) | 6 sn |
+| Segment | Kaynak | Kullanılan kısım | Birleşim |
+|---|---|---|---|
+| a | K0 → K1 (varyant 1) | 0–111. kare (4.67 sn); model 112. karede bitiş karesine kesiyordu | → b dissolve |
+| b | K1 → K2 (varyant 1) | tamamı (8 sn); adanın etrafında kesintisiz dönüş | → c aynı kare (K2) |
+| c | K2 → K3 (varyant 1) | 0–88. kare (3.71 sn); 94. karede hızlı atlama vardı | → d dissolve |
+| d | K3, sadece start (varyant 1) | tamamı (6.58 sn); pencereye yavaş push-in | son |
 
-- **Model:** `minimax_h3`, 2K, 16:9, klip başına ~12–16 kredi, her segmentten 2 varyant.
+- **Model:** `minimax_h3`, 2K (2560×1440), 16:9. Toplam 9 klip üretildi (~120 kredi).
 - **Ölçüm:** MiniMax'ın ilk ve son kareleri verilen fotoğrafla ortalama
-  2.6/255 farkla örtüşüyor (pembroke-2 ile ölçüldü). Segmentler bu yüzden paralel
-  üretilebildi. Son kareyi çıkarıp bir sonrakine vermeye gerek kalmadı.
+  2.6/255 farkla örtüşüyor, bu yüzden segmentler paralel üretilebildi.
+- **Öğrenilen:** İki fotoğraf çok farklı açılardaysa (1-1 → 1-3, 1-6 → 1-12)
+  model önce akıcı gidiyor, sonra bitiş karesine kesiyor. Temiz kısım
+  kırpılıp sonraki segmentle scroll altında dissolve ediliyor. Aynı odanın
+  komşu açıları (1-3 → 1-6) kesintisiz dönüyor. Bu dönüşte model odanın
+  görmediğimiz duvarını da (yuvarlak ayna, saat) uyduruyor.
 
 ## Sayfada
 
@@ -45,8 +49,12 @@ hissi korunsun ama render yerine gerçek mekan kullanılsın.
 
 - `.scene` 1000vh (mobilde 900svh). İçinde yapışkan, tam ekran bir sahne var.
 - Scroll ilerlemesinin 0–0.94 aralığı filmi oynatıyor. Segmentler süreye göre
-  ağırlıklı, böylece kamera hızı sabit kalıyor. Birleşim noktasında aktif
-  `<video>` değişiyor: iki taraf da aynı fotoğraf olduğu için geçiş görünmüyor.
+  ağırlıklı, böylece kamera hızı sabit kalıyor. `blend: true` olan segment
+  bir öncekiyle %4.5'lik bir aralıkta üst üste biniyor ve opaklıkla
+  dissolve ediliyor. Aynı kareyi paylaşanlarda (b → c) video doğrudan değişiyor.
+- Karartma (scrim) o an görünen metnin hizasını takip ediyor (sol, sağ, orta).
+  Header'ın açık/koyu tonu için `data-tone` sahnenin medya katmanında; sahne
+  küçülünce header tekrar koyu yazıya dönüyor.
 - **Hero:** Başlık scroll ile büyüyüp bulanıklaşarak kayboluyor; kamera
   yazının içinden odaya girer gibi.
 - **Beats:** 4 metin bloğu, her biri kendi ilerleme aralığında. Derinlikten
@@ -63,6 +71,9 @@ hissi korunsun ama render yerine gerçek mekan kullanılsın.
 
 ## Encode
 
-`scripts/encode-scene.sh <kaynak.mp4> <id>` → `public/media/scene/<id>-desktop.mp4`
+`scripts/encode-scene.sh <kaynak.mp4> <id> [son_iyi_kare]` → `public/media/scene/<id>-desktop.mp4`
 (1920×1080, CRF 22, GOP 6, B-frame yok), `<id>-mobile.mp4` (9:16 orta kırpım,
 720×1280, CRF 25, GOP 4), `<id>-poster.jpg`.
+
+Boyutlar: masaüstünde toplam 20.7 MB (a 4.2, b 8.3, c 3.7, d 4.5), mobilde
+7.3 MB. Segmentler sırayla yüklendiği için açılışta sadece a iniyor (4.2 MB, poster anında görünüyor).

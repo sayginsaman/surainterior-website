@@ -4,10 +4,10 @@ Sura Interior LLC için 3D, scroll-animasyonlu, immersive bir web sitesi.
 Referans: https://tinyvilla.peachworlds.com/. Asset üretimi: Higgsfield MCP.
 Repo: https://github.com/sayginsaman/surainterior-website (**public**).
 
-**Durum (2026-11-07):** Site yapıldı ve yeniden tasarlandı. Açılış artık
-gerçek proje fotoğraflarından üretilmiş, scroll ile oynayan bir film (`06`).
-Kil maket / 3D kaldırıldı. Lokal çalışıyor, production build temiz. Henüz
-deploy ve GitHub push yok.
+**Durum (2026-11-07):** Açılış artık tam ekran bir sahne: Pembroke Pines
+mutfağında, gerçek fotoğraflar arasında üretilmiş kesintisiz bir kamera
+hareketi, scroll ile ilerliyor (`07`). Kil maket (`05`) ve çerçeveli film
+(`06`) kaldırıldı. Lokal çalışıyor, build temiz. Deploy ve push yok.
 
 | Dosya | İçerik |
 |---|---|
@@ -16,7 +16,8 @@ deploy ve GitHub push yok.
 | [03-reference-tinyvilla-analysis.md](03-reference-tinyvilla-analysis.md) | Referans sitenin tekniği, kamera koreografisi, görsel dili, zayıf noktaları |
 | [04-concept-and-build-plan.md](04-concept-and-build-plan.md) | Konsept, 3D seçenekleri (A/B/C), Higgsfield, teknik yığın, contact formu, açık sorular |
 | [05-build-notes.md](05-build-notes.md) | İlk sürüm (kil maket, artık kullanılmıyor), form, fotoğraf hattı, marka, eksikler |
-| [06-real-film-redesign.md](06-real-film-redesign.md) | **Güncel:** gerçek fotoğraflardan film, klip seçimi, encode, tipografi, kalite kuralı |
+| [06-real-film-redesign.md](06-real-film-redesign.md) | İkinci sürüm (çerçeveli film, kaldırıldı); tipografi ve fotoğraf kalite kuralı hâlâ geçerli |
+| [07-immersive-scene.md](07-immersive-scene.md) | **Güncel açılış:** tam ekran sahne, segmentler, kırpma/dissolve kararları, encode |
 | `private/business-internals.md` | Fiyatlar, gelir hedefleri, reklam bütçesi, adres. **Gitignore'da, sadece lokal.** |
 | `reference/` | Tiny Villa ekran görüntüleri, video kare özeti |
 
@@ -38,5 +39,5 @@ deploy ve GitHub push yok.
 - `assets/portfolio/<proje>/pNN-k.jpeg`: PDF'ten kayıpsız çıkarılmış 72 görsel + `manifest.json`
 - `assets/video/kitchen-walkthrough-raw.mp4`: kullanıcının paylaştığı ham mutfak videosu
 - `public/work/<slug>/NN.jpg`: sitede kullanılan işlenmiş proje fotoğrafları (98 adet)
-- `public/media/film/`: açılış filminin klipleri (desktop/mobile) ve posterleri
+- `public/media/scene/`: açılış sahnesinin segmentleri (desktop/mobile) ve posterleri
 - `public/work/_bands/`: tam genişlik bant kırpımları
