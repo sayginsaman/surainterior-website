@@ -23,6 +23,7 @@ export function RevealVideo() {
     const build = document.querySelector<HTMLElement>('[data-key="build"]');
     if (!start || !end) return;
 
+    const root = document.documentElement;
     let raf = 0;
     let shown = false;
     let covered = false;
@@ -47,6 +48,9 @@ export function RevealVideo() {
         shownTime = performance.now();
       }
       const p = Math.min(1, Math.max(0, (y - a) / Math.max(1, b - a - window.innerHeight * 0.35)));
+      // Scrim + copy fade in with progress, so at the hand-off the clip's first
+      // frame is shown untouched and the seam with the canvas stays invisible.
+      root.style.setProperty("--rv", rm ? "1" : p.toFixed(4));
       const v = video.current;
       if (v && v.readyState >= 1 && v.duration && !rm) {
         const target = p * (v.duration - 0.05);

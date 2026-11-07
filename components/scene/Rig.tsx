@@ -27,7 +27,7 @@ function resolve(key: Key, aspect: number): Pose {
   let r = off.length();
   // Narrow screens see less horizontally: pull the camera back. Never for the
   // locked pose, whose frame has to match the reveal clip pixel for pixel.
-  if (!key.lock && aspect < 1.25) r *= Math.pow(Math.min(2.4, 1.25 / aspect), 0.85);
+  if (!key.lock && !(portrait && key.portrait) && aspect < 1.25) r *= Math.pow(Math.min(2.4, 1.25 / aspect), 0.85);
   return {
     key,
     target,

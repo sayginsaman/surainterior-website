@@ -22,7 +22,7 @@ export type Key = SceneValues & {
   shift: number;
   /** the pose the Higgsfield reveal clip starts from: never reframed, no parallax */
   lock?: boolean;
-  /** portrait viewports: optional camera override (otherwise pulled back automatically) */
+  /** portrait viewports: explicit camera (otherwise the key is pulled back automatically) */
   portrait?: { pos?: V3; target?: V3; fov?: number };
 };
 
@@ -34,9 +34,10 @@ export const KEYS: Key[] = [
   { id: "studio", pos: [-10.25, 8.6, 11.2], target: [-0.6, 0.6, -0.3], fov: 26, shift: -0.17, wallH: 1, assemble: 1, dims: 0, glow: 0.25, dusk: 0 },
   {
     id: "plan", pos: [0, 26.5, 0.004], target: [0, 0, 0], fov: 30, shift: 0.16, wallH: 0.035, assemble: 1, dims: 1, glow: 0, dusk: 0,
-    portrait: { pos: [0.004, 26.5, 0], target: [0, 0, 0] },
+    // portrait: rotate so the long side runs down the screen, room in the upper half
+    portrait: { pos: [3.904, 45, 0], target: [3.9, 0, 0] },
   },
-  { id: "build", pos: [8.4, 7.0, 9.2], target: [-0.8, 0.9, -1.0], fov: 28, shift: -0.15, wallH: 0.035, assemble: 0, dims: 0, glow: 0, dusk: 0 },
+  { id: "build", pos: [11.2, 10.8, 12.6], target: [-0.6, 1.9, -0.8], fov: 28, shift: -0.15, wallH: 0.035, assemble: 0, dims: 0, glow: 0, dusk: 0 },
   // anchored part-way down the build chapter: assembly finishes before the camera descends to P
   { id: "assembled", pos: [4.6, 5.4, 8.8], target: [-2.4, 0.9, -1.6], fov: 30, shift: -0.12, wallH: 1, assemble: 1, dims: 0, glow: 0.3, dusk: 0 },
   { id: "materials", ...REVEAL_POSE, shift: 0, wallH: 1, assemble: 1, dims: 0, glow: 0.35, dusk: 0, lock: true },

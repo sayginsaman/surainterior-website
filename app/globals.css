@@ -294,6 +294,7 @@ em {
   content: "";
   position: absolute;
   inset: 0;
+  opacity: min(1, calc(var(--rv, 0) * 6));
   background: linear-gradient(90deg, rgba(20, 16, 13, 0.62) 0%, rgba(20, 16, 13, 0.18) 45%, rgba(20, 16, 13, 0) 70%),
     linear-gradient(0deg, rgba(20, 16, 13, 0.5) 0%, rgba(20, 16, 13, 0) 35%);
 }
@@ -720,6 +721,7 @@ main,
   color: var(--clay);
 }
 .reveal-sticky {
+  opacity: clamp(0, calc(var(--rv, 0) * 7 - 0.15), 1);
   position: sticky;
   top: 0;
   height: 100vh;
@@ -1721,4 +1723,20 @@ textarea[aria-invalid="true"] {
   width: 1px;
   height: 1px;
   pointer-events: none;
+}
+
+/* keep long scroll chapters long on small screens too */
+.reveal-chapter {
+  min-height: 340vh;
+  min-height: 340svh;
+}
+@media (max-width: 760px) {
+  .chapter-build {
+    align-items: flex-start;
+    padding-top: 62svh;
+  }
+  .chapter-build .copy-block {
+    position: relative;
+    top: 0;
+  }
 }

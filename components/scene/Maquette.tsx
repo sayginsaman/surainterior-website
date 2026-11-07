@@ -381,7 +381,7 @@ function Lounge() {
         </group>
       </Part>
       {/* plant */}
-      <Part p={[5.5, 0, 2.75]} delay={0.74} lift={2}>
+      <Part p={[-5.35, 0, 3.3]} delay={0.74} lift={2}>
         <mesh position={[0, 0.26, 0]} material={materials.clayMid} castShadow receiveShadow>
           <cylinderGeometry args={[0.2, 0.24, 0.52, 32]} />
         </mesh>

@@ -165,7 +165,7 @@ export default function Stage({ reducedMotion, mobile }: { reducedMotion: boolea
       <ReadySignal />
       <LabelProjector />
       <EffectComposer multisampling={0} enableNormalPass={false}>
-        <N8AO aoRadius={0.55} distanceFalloff={0.7} intensity={2.4} quality={mobile ? "performance" : "medium"} halfRes={mobile} />
+        <N8AO aoRadius={0.55} distanceFalloff={0.7} intensity={2.4} quality={mobile ? "performance" : "medium"} />
         <Bloom mipmapBlur luminanceThreshold={1} luminanceSmoothing={0.2} intensity={0.9} radius={0.7} />
         <SMAA />
         <ToneMapping mode={ToneMappingMode.AGX} />
