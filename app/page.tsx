@@ -1,20 +1,81 @@
 import Image from "next/image";
 import Link from "next/link";
-import { bands, differentiators, film, getProject, photo, process, projects, services, site } from "@/lib/content";
+import { bands, differentiators, getProject, photo, process, projects, services, site } from "@/lib/content";
 import { Header } from "@/components/Header";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { RevealObserver } from "@/components/RevealObserver";
-import { Film } from "@/components/Film";
+import { Scene, type SceneBeat, type SceneSegment } from "@/components/Scene";
 import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 
+// The opening scene: one camera move through the Pembroke Pines kitchen.
+// Segments start on real photographs of the room (16:9 crops of the project
+// photos); b and c share a frame, a→b and c→d dissolve. See docs/07.
+const SEGMENTS: SceneSegment[] = [
+  { id: "a", seconds: 4.67 },
+  { id: "b", seconds: 8, blend: true },
+  { id: "c", seconds: 3.71 },
+  { id: "d", seconds: 6.58, blend: true },
+];
+
+const BEATS: SceneBeat[] = [
+  {
+    id: "kitchens",
+    from: 0.09,
+    to: 0.21,
+    align: "left",
+    kicker: "Kitchens & cabinetry",
+    title: (
+      <>
+        Built around the way <em>you live.</em>
+      </>
+    ),
+    text: "Tall walnut storage, a quartzite waterfall island and every reveal resolved before fabrication, so the room that is drawn is the room that gets built.",
+  },
+  {
+    id: "light",
+    from: 0.24,
+    to: 0.38,
+    align: "right",
+    kicker: "Light",
+    title: (
+      <>
+        Light, built into <em>the joinery.</em>
+      </>
+    ),
+    text: "LED lines inside the island shelves and along the toe-kick, planned with the millwork rather than added after it.",
+  },
+  {
+    id: "materials",
+    from: 0.42,
+    to: 0.63,
+    align: "left",
+    kicker: "Materials",
+    title: (
+      <>
+        Walnut, quartzite and <em>South Florida light.</em>
+      </>
+    ),
+    text: "A palette chosen for the house it lives in: warm timber, veined stone and windows open to the garden.",
+  },
+  {
+    id: "detail",
+    from: 0.7,
+    to: 0.95,
+    align: "center",
+    kicker: "Pembroke Pines Residence · 2023",
+    title: (
+      <>
+        Beyond design. <em>Into detail.</em>
+      </>
+    ),
+    link: { href: "/work/pembroke-pines-residence", label: "Explore the project" },
+  },
+];
+
 export default function Home() {
-  const chapters = film.map((c) => {
-    const p = getProject(c.project)!;
-    return { ...c, projectTitle: p.title, projectMeta: `${p.location} · ${p.year}` };
-  });
   const servicePics = services.map((s) => {
     const p = getProject(s.image.project)!;
     return { ...p.images[s.image.index], project: `${p.title} · ${p.location}` };
@@ -31,10 +92,12 @@ export default function Home() {
       <Header />
 
       <main id="main">
-        {/* 1 · Opening film: real rooms, scrubbed by scroll */}
-        <Film
-          chapters={chapters}
-          intro={
+        {/* 1 · Opening scene: a continuous walk through a real room, driven by scroll */}
+        <Scene
+          segments={SEGMENTS}
+          beats={BEATS}
+          credit="Pembroke Pines Residence · 2023 · Camera motion created from photographs of the finished room"
+          hero={
             <>
               <p className="label">Interior design studio · {site.city}</p>
               <h1 className="display">
@@ -46,16 +109,13 @@ export default function Home() {
                 Residential interiors, kitchens and custom millwork across South Florida. Designed to be built, made to be lived in.
               </p>
               <div className="cta-row">
-                <a className="btn btn-dark" href="#contact">
+                <a className="btn btn-light" href="#contact">
                   Book a consultation
                 </a>
-                <a className="btn btn-line" href="#work">
+                <a className="btn btn-ghost-light" href="#work">
                   View the work
                 </a>
               </div>
-              <p className="scroll-hint label" aria-hidden>
-                <span /> Scroll
-              </p>
             </>
           }
         />

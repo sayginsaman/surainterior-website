@@ -300,52 +300,6 @@ const work = manifest as unknown as Record<string, Img[]> & { _bands: Record<str
 /** 16:9 full-bleed crops made from the large source photographs. */
 export const bands = work._bands;
 
-export type Chapter = {
-  id: string;
-  clip: string; // /media/film/<clip>-{desktop,mobile}.mp4 + -poster.jpg
-  project: string;
-  kicker: string;
-  title: string;
-  text: string;
-};
-
-// The opening film: each chapter is a Higgsfield clip made from two real
-// photographs of the same room (start and end frames are the photographs),
-// scrubbed by scroll.
-export const film: Chapter[] = [
-  {
-    id: "kitchens",
-    clip: "pembroke",
-    project: "pembroke-pines-residence",
-    kicker: "Kitchens",
-    title: "Built around the way you live.",
-    text: "Walnut, quartzite and light resolved down to the last reveal, so the room that is drawn is the room that gets built.",
-  },
-  {
-    id: "millwork",
-    clip: "boca",
-    project: "boca-raton-residence",
-    kicker: "Custom millwork",
-    title: "Made for the wall it lives on.",
-    text: "Media walls, display niches and built-ins designed piece by piece, with the fabricator's drawings in mind from the first sketch.",
-  },
-  {
-    id: "light",
-    clip: "ftl",
-    project: "fort-lauderdale-kitchen",
-    kicker: "Light",
-    title: "Light, treated as a material.",
-    text: "Coves, shelf lines and toe-kick glow planned with the joinery, so the evening version of the room is designed too.",
-  },
-  {
-    id: "detail",
-    clip: "biscayne",
-    project: "biscayne-boulevard-residence",
-    kicker: "Detail",
-    title: "Detail you feel before you notice it.",
-    text: "Fluted oak, waterfall quartz and a table that grows out of the island: decisions made once, carefully, and built to last.",
-  },
-];
 
 export const projects: Project[] = raw.map((p) => ({
   ...p,

@@ -35,11 +35,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
       raf = 0;
       const probe = 36;
       let isDark = false;
-      // the opening film is a dark, full-screen video on narrow screens only
-      const filmDark = window.innerWidth <= 900;
-      for (const el of document.querySelectorAll<HTMLElement>("[data-tone]")) {
-        const tone = el.dataset.tone;
-        if (tone !== "dark" && !(tone === "film" && filmDark)) continue;
+      for (const el of document.querySelectorAll<HTMLElement>("[data-tone='dark']")) {
         const r = el.getBoundingClientRect();
         if (r.top <= probe && r.bottom >= probe) {
           isDark = true;
@@ -47,8 +43,8 @@ export function Header({ solid = false }: { solid?: boolean }) {
         }
       }
       setDark(isDark);
-      // over the opening film the page itself is the header's backdrop
-      const film = document.querySelector<HTMLElement>(".film");
+      // over the opening scene the film itself is the header's backdrop
+      const film = document.querySelector<HTMLElement>(".scene");
       const inFilm = film ? film.getBoundingClientRect().bottom > probe : false;
       setScrolled(window.scrollY > 24 && !inFilm);
     };
