@@ -10,7 +10,28 @@ Yani istenen: ekranın tamamı tek bir sahne olsun, scroll kamerayı o sahnenin
 içinde ilerletsin, yazılar sahnenin üstünde derinlikle belirsin. Tiny Villa
 hissi korunsun ama render yerine gerçek mekan kullanılsın.
 
-## Karar
+## Güncelleme (aynı gün): dört projelik tur
+
+Kullanıcı yönü onayladı ama iki şey istedi: açılış Pembroke Pines yerine daha
+lüks ve modern bir projeyle başlasın, sahneye daha fazla video eklensin.
+
+Yeni sıra (her proje kendi gerçek fotoğrafından başlıyor, projeler arası
+scroll altında dissolve):
+
+| Sıra | Proje | Segment | Kaynak |
+|---|---|---|---|
+| 1 (hero) | Fort Lauderdale Residence | `f`, 8 sn (varyant 1) | 2-1 (LED tavan ışığı, kavisli ada), sadece start; adaya ve taş tezgaha kesintisiz push |
+| 2 | Boca Raton Residence | `m`, 3.2 sn (varyant 1, 0–76. kare) | 1-1 → 1-2; ortada hızlı bir savrulma vardı (iki varyantta da), sadece yumuşak ilk kısım alındı ve scroll'da 5 sn ağırlıkla yavaşlatıldı |
+| 3 | Biscayne Boulevard Residence | `s`, 6.58 sn (varyant 1) | 9-1, sadece start, adaya doğru push; iki varyant da temizdi |
+| 4 | Pembroke Pines Residence | `b` + `c` + `d` | Önceki sürümden: ada etrafında dönüş, tezgah, pencere ışığı |
+
+Pembroke Pines'ın açılış dolly'si (`a`) çıkarıldı. Bu turda 6 klip daha
+üretildi (~80 kredi). Parkland daha klasik
+durduğu için tura alınmadı. Final cümlesi "Beyond design. Into detail."
+artık stüdyonun imzası olarak pencere ışığında, "Book a consultation" linkiyle.
+Alt şeritteki proje adı, o an hangi projedeysen onu gösteriyor.
+
+## İlk karar (Pembroke Pines tek sahne)
 
 - **Sahne:** Pembroke Pines Residence mutfağı. Elimizde aynı odanın 12 gerçek
   fotoğrafı var, bu yüzden tutarlı bir kamera yolu kurulabiliyor.
@@ -75,5 +96,10 @@ hissi korunsun ama render yerine gerçek mekan kullanılsın.
 (1920×1080, CRF 22, GOP 6, B-frame yok), `<id>-mobile.mp4` (9:16 orta kırpım,
 720×1280, CRF 25, GOP 4), `<id>-poster.jpg`.
 
-Boyutlar: masaüstünde toplam 20.7 MB (a 4.2, b 8.3, c 3.7, d 4.5), mobilde
-7.3 MB. Segmentler sırayla yüklendiği için açılışta sadece a iniyor (4.2 MB, poster anında görünüyor).
+Boyutlar (dört projelik tur): masaüstünde toplam ~31 MB (f 6.6, m 2.7, s 5.3,
+b 8.3, c 3.7, d 4.5), mobilde ~10 MB. Segmentler sırayla yükleniyor: açılışta
+sadece `f` ve bir sonraki iniyor, poster anında görünüyor. Gerekirse masaüstü
+CRF 24 ile ~%30 küçültülebilir.
+
+`seconds` alanı scroll payını belirliyor, video süresini değil. Kısa ama
+güzel bir parçaya daha büyük değer vermek, o parçayı scroll'da yavaşlatır (`m`).

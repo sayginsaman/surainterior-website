@@ -10,68 +10,89 @@ import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 
-// The opening scene: one camera move through the Pembroke Pines kitchen.
-// Segments start on real photographs of the room (16:9 crops of the project
-// photos); b and c share a frame, a→b and c→d dissolve. See docs/07.
+// The opening scene: a walk through four finished projects, full screen,
+// driven by scroll. Every segment starts on a real photograph of the room
+// (16:9 crops of the project photos); b→c share a frame, the rest dissolve.
+// See docs/07.
 const SEGMENTS: SceneSegment[] = [
-  { id: "a", seconds: 4.67 },
-  { id: "b", seconds: 8, blend: true },
-  { id: "c", seconds: 3.71 },
-  { id: "d", seconds: 6.58, blend: true },
+  { id: "f", seconds: 8, project: "Fort Lauderdale Residence · 2025" },
+  // the media-wall glide is 3.2 s long; give it more scroll so it plays slower
+  { id: "m", seconds: 5, blend: true, project: "Boca Raton Residence · 2025" },
+  { id: "s", seconds: 6.58, blend: true, project: "Biscayne Boulevard Residence · 2025" },
+  { id: "b", seconds: 8, blend: true, project: "Pembroke Pines Residence · 2023" },
+  { id: "c", seconds: 3.71, project: "Pembroke Pines Residence · 2023" },
+  { id: "d", seconds: 6.58, blend: true, project: "Pembroke Pines Residence · 2023" },
 ];
 
 const BEATS: SceneBeat[] = [
   {
-    id: "kitchens",
-    from: 0.09,
-    to: 0.21,
+    id: "light",
+    from: 0.08,
+    to: 0.19,
     align: "left",
-    kicker: "Kitchens & cabinetry",
+    kicker: "Fort Lauderdale Residence",
+    title: (
+      <>
+        Light, treated <em>as a material.</em>
+      </>
+    ),
+    text: "A curved island in fluted walnut under a warm ceiling cove: the evening version of the room was designed with the joinery.",
+    link: { href: "/work/fort-lauderdale-kitchen", label: "View the project" },
+  },
+  {
+    id: "millwork",
+    from: 0.215,
+    to: 0.315,
+    align: "right",
+    kicker: "Boca Raton Residence",
+    title: (
+      <>
+        Made for the wall <em>it lives on.</em>
+      </>
+    ),
+    text: "Walnut slats, lit display niches and floating cabinets, drawn piece by piece with the fabricator in mind.",
+    link: { href: "/work/boca-raton-residence", label: "View the project" },
+  },
+  {
+    id: "detail",
+    from: 0.34,
+    to: 0.47,
+    align: "left",
+    kicker: "Biscayne Boulevard Residence",
+    title: (
+      <>
+        Detail you feel <em>before you notice it.</em>
+      </>
+    ),
+    text: "Oak tall cabinets, a waterfall quartz island and a table that grows out of it on a single cylinder base.",
+    link: { href: "/work/biscayne-boulevard-residence", label: "View the project" },
+  },
+  {
+    id: "kitchens",
+    from: 0.51,
+    to: 0.66,
+    align: "right",
+    kicker: "Pembroke Pines Residence",
     title: (
       <>
         Built around the way <em>you live.</em>
       </>
     ),
-    text: "Tall walnut storage, a quartzite waterfall island and every reveal resolved before fabrication, so the room that is drawn is the room that gets built.",
+    text: "Walnut, quartzite and light resolved down to the last reveal, so the room that is drawn is the room that gets built.",
+    link: { href: "/work/pembroke-pines-residence", label: "View the project" },
   },
   {
-    id: "light",
-    from: 0.24,
-    to: 0.38,
-    align: "right",
-    kicker: "Light",
-    title: (
-      <>
-        Light, built into <em>the joinery.</em>
-      </>
-    ),
-    text: "LED lines inside the island shelves and along the toe-kick, planned with the millwork rather than added after it.",
-  },
-  {
-    id: "materials",
-    from: 0.42,
-    to: 0.63,
-    align: "left",
-    kicker: "Materials",
-    title: (
-      <>
-        Walnut, quartzite and <em>South Florida light.</em>
-      </>
-    ),
-    text: "A palette chosen for the house it lives in: warm timber, veined stone and windows open to the garden.",
-  },
-  {
-    id: "detail",
-    from: 0.7,
+    id: "finale",
+    from: 0.71,
     to: 0.95,
     align: "center",
-    kicker: "Pembroke Pines Residence · 2023",
+    kicker: "SURA INTERIOR · South Florida",
     title: (
       <>
         Beyond design. <em>Into detail.</em>
       </>
     ),
-    link: { href: "/work/pembroke-pines-residence", label: "Explore the project" },
+    link: { href: "#contact", label: "Book a consultation" },
   },
 ];
 
@@ -96,7 +117,7 @@ export default function Home() {
         <Scene
           segments={SEGMENTS}
           beats={BEATS}
-          credit="Pembroke Pines Residence · 2023 · Camera motion created from photographs of the finished room"
+          credit="Camera motion created from photographs of the finished rooms"
           hero={
             <>
               <p className="label">Interior design studio · {site.city}</p>

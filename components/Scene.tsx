@@ -8,6 +8,8 @@ export type SceneSegment = {
   seconds: number;
   /** dissolve in from the previous segment (when the two don't share a frame) */
   blend?: boolean;
+  /** project shown in the credit line while this segment plays */
+  project: string;
 };
 export type SceneBeat = {
   id: string;
@@ -180,7 +182,7 @@ export function Scene({ segments, beats, hero, credit }: Props) {
   };
 
   return (
-    <section ref={root} className="scene" aria-label="A walk through the Pembroke Pines Residence">
+    <section ref={root} className="scene" aria-label="A walk through four finished projects">
       <div ref={stage} className="scene-stage">
         {/* data-tone sits on the media so the header turns dark again once the room recedes */}
         <div ref={media} className="scene-media" data-tone="dark">
@@ -235,7 +237,9 @@ export function Scene({ segments, beats, hero, credit }: Props) {
         ))}
 
         <div className="scene-foot" aria-hidden>
-          <span className="scene-credit">{credit}</span>
+          <span className="scene-credit">
+            <b>{segments[active]?.project}</b> · {credit}
+          </span>
           <span ref={progressRef} className="scene-progress">
             <i />
           </span>
