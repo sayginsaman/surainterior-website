@@ -12,7 +12,7 @@ Purposeful Spaces."), "About SURA INTERIOR" metni + görsel, "Our Philosophy"
 | Hero | "Thoughtful design. Purposeful spaces." | Yeni gerçek bant `lounge`: Fort Lauderdale 3-5'ten 16:9 kırpım (kavisli koltuklar + yivli ceviz ada), 2880×1620 |
 | About SURA INTERIOR | Görseldeki üç paragraf, Sura'nın gerçek bilgileriyle; "Our philosophy" butonu aşağı kaydırıyor | Boca Raton, ışıklı vitrin raflar (gerçek) |
 | Our philosophy | Experience · Design vision · Execution (`lib/content.ts` → `philosophy`) | Üçü de gerçek proje detayı: Pembroke taş + ceviz, Biscayne zeytin dalı natürmort, Boca LED'li dolap |
-| The founder | Sura Kılıç, PhD in Interior Architecture; kısa biyografi, Education / Practice / Studio listesi; "Meet Sura in a consultation" → `/consultation` | Higgsfield natürmort (vazo, traverten konsol, yivli meşe). İnsan yok, portre değil, `aria-hidden` |
+| The founder | Sura Kilic, PhD in Interior Architecture; kısa biyografi, Education / Practice / Studio listesi; "Meet Sura in a consultation" → `/consultation` | Higgsfield natürmort (vazo, traverten konsol, yivli meşe). İnsan yok, portre değil, `aria-hidden` |
 | What sets the studio apart | Mevcut 5 farklılaştırıcı; başlık masaüstünde sabit kalıyor | — |
 | CTA şeridi | "Every great project begins with a conversation." → `/consultation`, `/services` | Pembroke bandı |
 

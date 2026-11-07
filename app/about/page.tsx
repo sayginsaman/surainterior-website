@@ -10,7 +10,7 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "SURA INTERIOR is a residential interior design studio in Boca Raton, founded by Sura Kılıç, PhD in Interior Architecture, with more than twenty years of practice.",
+    "SURA INTERIOR is a residential interior design studio in Boca Raton, founded by Sura Kilic, PhD in Interior Architecture, with more than twenty years of practice.",
   alternates: { canonical: "/about" },
 };
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
               A design studio rooted in experience, creativity <em>and precision.</em>
             </h2>
             <p data-reveal>
-              SURA INTERIOR is a full-service residential interior design studio in Boca Raton, founded by Sura Kılıç, PhD in Interior
+              SURA INTERIOR is a full-service residential interior design studio in Boca Raton, founded by Sura Kilic, PhD in Interior
               Architecture.
             </p>
             <p data-reveal>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               The founder
             </p>
             <h2 id="founder-title" className="h2" data-reveal>
-              Sura Kılıç, <em>PhD in Interior Architecture</em>
+              Sura Kilic, <em>PhD in Interior Architecture</em>
             </h2>
             <p className="founder-lede" data-reveal>
               An academic and a practitioner, with a multidisciplinary background in interior architecture, design research and project management,

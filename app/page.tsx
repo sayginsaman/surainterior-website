@@ -158,7 +158,7 @@ export default function Home() {
             <dl className="facts" data-reveal>
               <div>
                 <dt>Founder</dt>
-                <dd>Sura Kılıç, PhD</dd>
+                <dd>Sura Kilic, PhD</dd>
               </div>
               <div>
                 <dt>Practice</dt>
@@ -286,7 +286,7 @@ export default function Home() {
                 Founder
               </p>
               <h2 id="about-title" className="h2" data-reveal>
-                Sura Kılıç, <em>PhD</em>
+                Sura Kilic, <em>PhD</em>
               </h2>
               <p className="about-lede" data-reveal>
                 Sura holds a PhD in Interior Architecture and brings more than twenty years of professional practice, in the United States and

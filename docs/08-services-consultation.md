@@ -32,7 +32,7 @@ Kullanıcı iki referans görsel gönderdi:
 - Hero: "A thoughtful first step." + Higgsfield stüdyo masası görseli (insan
   yok; referanstaki gibi bir kişi kullanılmadı, Sura Hanım'mış gibi
   algılanmasın diye).
-- Tanıtım metni + "With Sura Kılıç, PhD in Interior Architecture, 20+ years".
+- Tanıtım metni + "With Sura Kilic, PhD in Interior Architecture, 20+ years".
 - What to expect: 4 adım, Higgsfield ile üretilmiş kare görseller
   (`public/media/studio/expect-*.jpg`).
 - Good to have on hand + Format ("At your home in South Florida, or online by

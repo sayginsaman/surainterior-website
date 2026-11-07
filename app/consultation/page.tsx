@@ -55,7 +55,7 @@ export default function ConsultationPage() {
             consultation is a focused conversation about your project with an experienced interior designer.
           </p>
           <p className="consult-intro-by" data-reveal>
-            With Sura Kılıç, PhD in Interior Architecture, 20+ years of practice
+            With Sura Kilic, PhD in Interior Architecture, 20+ years of practice
           </p>
         </section>
 

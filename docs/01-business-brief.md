@@ -10,7 +10,7 @@ Kaynaklar: `SURA_INTERIOR_LLC_Business_Model.pdf` (8 sayfa, strateji dokümanı)
 ## Tek cümlede
 
 South Florida'da (Boca Raton merkezli) **konut odaklı, butik bir iç mimari ve
-tasarım stüdyosu**. Doktora seviyesinde iç mimar olan kurucu Sura Kılıç
+tasarım stüdyosu**. Doktora seviyesinde iç mimar olan kurucu Sura Kilic
 tarafından yönetiliyor. Farkı: tasarımı sadece güzel bir render olarak değil,
 **üretilebilir, kurulabilir ve gerçekten yaşanan** bir mekan olarak ele alması
 (özellikle custom millwork / dolap / mutfak).
@@ -36,7 +36,7 @@ PDF'in önerdiği site girişi (birebir kullanılabilir):
 
 **Logo yok.** Portfolyoda logo kullanılmamış. Logonun var olup olmadığı açık soru.
 
-## Kurucu: Sura Kılıç
+## Kurucu: Sura Kilic
 
 - Portfolyo kapağında: **"PhD Interior Architect"**, "Residential Interiors ·
   Custom Millwork · Design & Project Management", "Selected Projects | USA &
