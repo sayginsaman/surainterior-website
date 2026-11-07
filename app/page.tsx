@@ -16,17 +16,17 @@ import { Footer } from "@/components/Footer";
 // See docs/07.
 const SEGMENTS: SceneSegment[] = [
   // each project is two clips; the second starts on the first one's last frame
-  { id: "f", seconds: 8, project: "Fort Lauderdale Residence · 2025" },
-  { id: "f2", seconds: 8, project: "Fort Lauderdale Residence · 2025" },
+  { id: "f", seconds: 8 },
+  { id: "f2", seconds: 8 },
   // the media-wall glide is 3.2 s long; give it more scroll so it plays slower
-  { id: "m", seconds: 5, blend: true, project: "Boca Raton Residence · 2025" },
+  { id: "m", seconds: 5, blend: true },
   // ends in a quicker push to the lit niche: more scroll keeps it calm
-  { id: "m2", seconds: 9, project: "Boca Raton Residence · 2025" },
-  { id: "s", seconds: 6.58, blend: true, project: "Biscayne Boulevard Residence · 2025" },
-  { id: "s2", seconds: 8, project: "Biscayne Boulevard Residence · 2025" },
-  { id: "b", seconds: 8, blend: true, project: "Pembroke Pines Residence · 2023" },
-  { id: "c", seconds: 3.71, project: "Pembroke Pines Residence · 2023" },
-  { id: "d", seconds: 6.58, blend: true, project: "Pembroke Pines Residence · 2023" },
+  { id: "m2", seconds: 9 },
+  { id: "s", seconds: 6.58, blend: true },
+  { id: "s2", seconds: 8 },
+  { id: "b", seconds: 8, blend: true },
+  { id: "c", seconds: 3.71 },
+  { id: "d", seconds: 6.58, blend: true },
 ];
 
 const BEATS: SceneBeat[] = [
@@ -122,7 +122,6 @@ export default function Home() {
         <Scene
           segments={SEGMENTS}
           beats={BEATS}
-          credit="Camera motion created from photographs of the finished rooms"
           hero={
             <>
               <p className="label">Interior design studio · {site.city}</p>

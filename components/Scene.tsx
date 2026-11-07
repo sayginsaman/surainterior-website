@@ -8,8 +8,6 @@ export type SceneSegment = {
   seconds: number;
   /** dissolve in from the previous segment (when the two don't share a frame) */
   blend?: boolean;
-  /** project shown in the credit line while this segment plays */
-  project: string;
 };
 export type SceneBeat = {
   id: string;
@@ -27,7 +25,6 @@ type Props = {
   segments: SceneSegment[];
   beats: SceneBeat[];
   hero: ReactNode;
-  credit: string;
 };
 
 const clamp01 = (v: number) => (v < 0 ? 0 : v > 1 ? 1 : v);
@@ -41,14 +38,13 @@ const smooth = (t: number) => t * t * (3 - 2 * t);
  * Copy floats over the room and moves in depth; at the end the room recedes
  * into the page.
  */
-export function Scene({ segments, beats, hero, credit }: Props) {
+export function Scene({ segments, beats, hero }: Props) {
   const root = useRef<HTMLElement>(null);
   const media = useRef<HTMLDivElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
   const beatRefs = useRef<(HTMLElement | null)[]>([]);
   const videos = useRef<(HTMLVideoElement | null)[]>([]);
-  const progressRef = useRef<HTMLSpanElement>(null);
   const [active, setActive] = useState(0);
   const [loaded, setLoaded] = useState<boolean[]>(() => segments.map((_, i) => i === 0));
   const [variant, setVariant] = useState<"desktop" | "mobile">("desktop");
@@ -85,7 +81,6 @@ export function Scene({ segments, beats, hero, credit }: Props) {
       const P = clamp01(-r.top / span);
       // the film runs over 0..0.94, the last stretch is the hand-off to the page
       const F = clamp01(P / 0.94);
-      progressRef.current?.style.setProperty("--p", F.toFixed(4));
 
       let primary = 0;
       let needLoad = false;
@@ -236,14 +231,6 @@ export function Scene({ segments, beats, hero, credit }: Props) {
           </article>
         ))}
 
-        <div className="scene-foot" aria-hidden>
-          <span className="scene-credit">
-            <b>{segments[active]?.project}</b> · {credit}
-          </span>
-          <span ref={progressRef} className="scene-progress">
-            <i />
-          </span>
-        </div>
       </div>
     </section>
   );

@@ -590,41 +590,6 @@ em {
 .scene-beat .text-link {
   color: var(--cream);
 }
-.scene-foot {
-  position: absolute;
-  left: var(--gutter);
-  right: var(--gutter);
-  bottom: 2.2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  font-weight: 500;
-  font-size: 0.6rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(249, 245, 239, 0.6);
-}
-.scene-credit {
-  flex: none;
-}
-.scene-credit b {
-  font-weight: 500;
-  color: var(--cream);
-}
-.scene-progress {
-  position: relative;
-  flex: 1;
-  height: 1px;
-  background: rgba(249, 245, 239, 0.22);
-}
-.scene-progress i {
-  position: absolute;
-  inset: 0;
-  background: var(--cream);
-  transform-origin: left;
-  transform: scaleX(var(--p, 0));
-}
-
 .btn-light {
   background: var(--cream);
   color: var(--ink);
@@ -1624,9 +1589,6 @@ textarea[aria-invalid="true"] {
   }
   .scene-beat-center .beat-title {
     font-size: clamp(2.8rem, 12.5vw, 4.6rem);
-  }
-  .scene-credit {
-    display: none;
   }
 }
 
