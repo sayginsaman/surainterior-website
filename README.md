@@ -1,8 +1,8 @@
 # SURA INTERIOR · website
 
 Immersive, scroll-driven site for Sura Interior LLC, a residential interior design studio in Boca Raton, Florida.
-A real-time clay maquette (React Three Fiber) is choreographed by scroll, hands off to a seam-locked
-Higgsfield clip where the room takes on its materials, and then real project photography takes over.
+The opening is a scroll-scrubbed film made from Sura's own project photographs (Higgsfield MiniMax H3 clips
+that start, and some end, on real photos), followed by services, selected work, process and a contact form.
 
 ```bash
 npm install
@@ -10,6 +10,6 @@ npm run dev        # http://localhost:3000
 npm run build
 ```
 
-- Content: `lib/content.ts` · camera keyframes: `lib/timeline.ts` · scene: `components/scene/`
+- Content: `lib/content.ts` · opening film: `components/Film.tsx` · clip encoding: `scripts/encode-film.sh`
 - Contact form delivery: copy `.env.example` to `.env.local` and set `RESEND_API_KEY`
-- Project notes (Turkish): `docs/` — start with `docs/README.md` and `docs/05-build-notes.md`
+- Project notes (Turkish): `docs/` — start with `docs/README.md` and `docs/06-real-film-redesign.md`
