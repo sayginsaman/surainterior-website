@@ -1,13 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Encode_Sans_Condensed, IBM_Plex_Mono, Instrument_Serif, Inter_Tight } from "next/font/google";
+import { Cormorant_Garamond, Encode_Sans_Condensed, Jost } from "next/font/google";
 import { site } from "@/lib/content";
 import { Attribution } from "@/components/Attribution";
 import "./globals.css";
 
-const display = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-display" });
-const sans = Inter_Tight({ subsets: ["latin"], variable: "--font-sans" });
+const display = Cormorant_Garamond({ subsets: ["latin", "latin-ext"], weight: ["300", "400", "500"], style: ["normal", "italic"], variable: "--font-display" });
+const sans = Jost({ subsets: ["latin", "latin-ext"], weight: ["300", "400", "500"], variable: "--font-sans" });
 const brand = Encode_Sans_Condensed({ subsets: ["latin"], weight: ["300", "400"], variable: "--font-brand" });
-const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" });
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
@@ -56,7 +55,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${display.variable} ${sans.variable} ${mono.variable} ${brand.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${display.variable} ${sans.variable} ${brand.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

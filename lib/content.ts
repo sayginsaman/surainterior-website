@@ -42,7 +42,7 @@ export const services: Service[] = [
       "FF&E specifications and purchasing coordination",
     ],
     outcome: "A cohesive design direction supported by clear visual and technical information.",
-    image: { project: "cape-coral-house", index: 0 },
+    image: { project: "biscayne-boulevard-residence", index: 0 },
   },
   {
     n: "02",
@@ -104,7 +104,7 @@ export const services: Service[] = [
       "Room completion and styling",
     ],
     outcome: "A finished interior in which furnishings, lighting, textiles and accessories work together.",
-    image: { project: "armani-casa-residence", index: 0 },
+    image: { project: "fort-lauderdale-kitchen", index: 2 },
   },
 ];
 
@@ -253,46 +253,6 @@ const raw: Omit<Project, "images">[] = [
     ],
   },
   {
-    slug: "cape-coral-house",
-    title: "Cape Coral House",
-    location: "Cape Coral, FL",
-    year: 2024,
-    category: "Full home",
-    scope: ["Full-home design", "Kitchen & bath", "Finishes"],
-    summary:
-      "A full-home scheme in white and light oak. Living, kitchen, dining, bedrooms and baths were designed as one calm, continuous palette.",
-    alts: [
-      "Open living room under a coffered ceiling",
-      "Kitchen with a waterfall island and oak accents",
-      "Dining area and kitchen",
-      "Kitchen run with glass-front upper cabinets",
-      "Dining table toward the kitchen",
-      "Bedroom with a paneled television wall",
-      "Bathroom with a freestanding tub",
-      "Walk-in shower in marble-look tile",
-      "Floating vanity and hallway",
-      "Entry with black-framed glass doors",
-      "Kitchenette with open shelving",
-    ],
-  },
-  {
-    slug: "fort-lauderdale-bedroom",
-    title: "Fort Lauderdale Bedroom",
-    location: "Fort Lauderdale, FL",
-    year: 2024,
-    category: "Bedroom millwork",
-    scope: ["Custom millwork", "Lighting"],
-    summary:
-      "A bed wall treated as architecture: a lit headboard niche, flanking display shelves, wardrobes and a wine column with glass shelves.",
-    alts: [
-      "Built-in bed wall with a lit niche and flanking shelves below clerestory windows",
-      "Bed wall seen from the corner",
-      "Bed with a lit headboard niche",
-      "Built-in bed wall seen straight on",
-      "Wine column with lit glass shelves",
-    ],
-  },
-  {
     slug: "miami-beach-nursery",
     title: "Miami Beach Nursery",
     location: "Miami Beach, FL",
@@ -333,50 +293,59 @@ const raw: Omit<Project, "images">[] = [
       "Under-cabinet light detail",
     ],
   },
-  {
-    slug: "armani-casa-residence",
-    title: "Armani Casa Residence",
-    location: "Sunny Isles Beach, FL",
-    year: 2023,
-    category: "Furnishing & FF&E",
-    scope: ["Furniture & lighting", "FF&E", "Styling"],
-    summary:
-      "Furniture, lighting and styling for an oceanfront residence: a low, pale palette that leaves the view to the Atlantic, and warm cove lighting for the evening.",
-    alts: [
-      "Living room with floor-to-ceiling ocean views",
-      "Living room with a sectional and console",
-      "Sectional and round coffee tables",
-      "Lounge chairs facing the sectional",
-      "White kitchen with an island",
-      "Kitchen with integrated appliances",
-      "Bedroom with ocean views",
-      "Bathroom in travertine-look stone",
-      "Gallery hallway",
-      "Ceiling cove with warm light",
-      "Ceiling cove lit at night",
-    ],
-  },
-  {
-    slug: "gorhan-design-studio-center",
-    title: "Gorhan Design Studio Center",
-    location: "Miami, FL",
-    year: 2023,
-    category: "Commercial planning",
-    scope: ["Space planning", "Zoning & circulation", "Layout revisions"],
-    summary:
-      "Zoning, circulation and layout studies for a design center with showrooms, a workshop, event space and offices. Shown for the planning work behind a project.",
-    alts: [
-      "Color-coded zoning diagram of the design center",
-      "Circulation diagram",
-      "Plan revisions with red-line notes",
-      "Floor plan",
-      "Electrical layout draft",
-      "Planning study",
-    ],
-  },
 ];
 
-const work = manifest as Record<string, Img[]>;
+const work = manifest as unknown as Record<string, Img[]> & { _bands: Record<string, Img> };
+
+/** 16:9 full-bleed crops made from the large source photographs. */
+export const bands = work._bands;
+
+export type Chapter = {
+  id: string;
+  clip: string; // /media/film/<clip>-{desktop,mobile}.mp4 + -poster.jpg
+  project: string;
+  kicker: string;
+  title: string;
+  text: string;
+};
+
+// The opening film: each chapter is a Higgsfield clip made from two real
+// photographs of the same room (start and end frames are the photographs),
+// scrubbed by scroll.
+export const film: Chapter[] = [
+  {
+    id: "kitchens",
+    clip: "pembroke",
+    project: "pembroke-pines-residence",
+    kicker: "Kitchens",
+    title: "Built around the way you live.",
+    text: "Walnut, quartzite and light resolved down to the last reveal, so the room that is drawn is the room that gets built.",
+  },
+  {
+    id: "millwork",
+    clip: "boca",
+    project: "boca-raton-residence",
+    kicker: "Custom millwork",
+    title: "Made for the wall it lives on.",
+    text: "Media walls, display niches and built-ins designed piece by piece, with the fabricator's drawings in mind from the first sketch.",
+  },
+  {
+    id: "light",
+    clip: "ftl",
+    project: "fort-lauderdale-kitchen",
+    kicker: "Light",
+    title: "Light, treated as a material.",
+    text: "Coves, shelf lines and toe-kick glow planned with the joinery, so the evening version of the room is designed too.",
+  },
+  {
+    id: "detail",
+    clip: "biscayne",
+    project: "biscayne-boulevard-residence",
+    kicker: "Detail",
+    title: "Detail you feel before you notice it.",
+    text: "Fluted oak, waterfall quartz and a table that grows out of the island: decisions made once, carefully, and built to last.",
+  },
+];
 
 export const projects: Project[] = raw.map((p) => ({
   ...p,

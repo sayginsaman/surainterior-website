@@ -18,12 +18,12 @@ export function Footer() {
       <p className="footer-descriptor">{site.descriptor.join(" · ")}</p>
       <div className="footer-cols">
         <div>
-          <p className="mono">Studio</p>
+          <p className="label">Studio</p>
           <p>{site.city}</p>
           <p>Serving South Florida</p>
         </div>
         <div>
-          <p className="mono">Contact</p>
+          <p className="label">Contact</p>
           <p>
             <a href={site.phoneHref}>{site.phone}</a>
           </p>
@@ -32,7 +32,7 @@ export function Footer() {
           </p>
         </div>
         <div>
-          <p className="mono">Explore</p>
+          <p className="label">Explore</p>
           <p>
             <Link href="/#services">Services</Link>
           </p>
@@ -44,7 +44,7 @@ export function Footer() {
           </p>
         </div>
       </div>
-      <div className="footer-base mono">
+      <div className="footer-base label">
         <span>© {new Date().getFullYear()} {site.legalName}</span>
         <span>Interior design, specification and coordination. Licensed trades by licensed professionals.</span>
       </div>

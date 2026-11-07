@@ -77,7 +77,7 @@ export function ContactForm({ email }: { email: string }) {
   if (status.kind === "sent") {
     return (
       <div className="form-done" ref={statusRef} tabIndex={-1} role="status">
-        <p className="eyebrow">Inquiry received</p>
+        <p className="label">Inquiry received</p>
         <h3>Thank you. We&rsquo;ll be in touch to arrange a discovery call.</h3>
         <p>If it&rsquo;s easier, you can also reach us at <a href={`mailto:${email}`}>{email}</a>.</p>
       </div>

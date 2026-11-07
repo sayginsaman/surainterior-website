@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: Props) {
         <section className="project-hero" data-tone="dark">
           <Image src={cover.src} alt={cover.alt} fill priority sizes="100vw" quality={80} placeholder="blur" blurDataURL={cover.blur} />
           <div className="project-title">
-            <p className="eyebrow">
+            <p className="label">
               {p.category} · {p.year}
             </p>
             <h1 className="display-2">{p.title}</h1>
@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: Props) {
 
         <Link href={`/work/${next.slug}`} className="project-next">
           <div>
-            <p className="eyebrow">Next project</p>
+            <p className="label">Next project</p>
             <p className="display-2">{next.title}</p>
           </div>
           <span className="btn btn-ghost">

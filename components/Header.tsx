@@ -15,6 +15,7 @@ const NAV = [
 export function Header({ solid = false }: { solid?: boolean }) {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if (!open) return;
@@ -34,7 +35,11 @@ export function Header({ solid = false }: { solid?: boolean }) {
       raf = 0;
       const probe = 36;
       let isDark = false;
-      for (const el of document.querySelectorAll<HTMLElement>("[data-tone='dark']")) {
+      // the opening film is a dark, full-screen video on narrow screens only
+      const filmDark = window.innerWidth <= 900;
+      for (const el of document.querySelectorAll<HTMLElement>("[data-tone]")) {
+        const tone = el.dataset.tone;
+        if (tone !== "dark" && !(tone === "film" && filmDark)) continue;
         const r = el.getBoundingClientRect();
         if (r.top <= probe && r.bottom >= probe) {
           isDark = true;
@@ -42,6 +47,10 @@ export function Header({ solid = false }: { solid?: boolean }) {
         }
       }
       setDark(isDark);
+      // over the opening film the page itself is the header's backdrop
+      const film = document.querySelector<HTMLElement>(".film");
+      const inFilm = film ? film.getBoundingClientRect().bottom > probe : false;
+      setScrolled(window.scrollY > 24 && !inFilm);
     };
     const on = () => {
       if (!raf) raf = requestAnimationFrame(check);
@@ -56,7 +65,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
   }, []);
 
   return (
-    <header className={`site-header${dark ? " is-dark" : ""}${solid ? " is-solid" : ""}${open ? " is-open" : ""}`}>
+    <header className={`site-header${dark ? " is-dark" : ""}${scrolled || solid ? " is-scrolled" : ""}${open ? " is-open" : ""}`}>
       <Link href="/" className="wordmark" aria-label="SURA INTERIOR, home" onClick={() => setOpen(false)}>
         <LogoMark />
         <Wordmark />

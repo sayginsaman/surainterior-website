@@ -58,5 +58,24 @@ for (const [slug, cfg] of Object.entries(sources)) {
     console.log(slug, out, `${info.width}x${info.height}`, box ? "trimmed" : "", Math.round(info.size / 1024) + "KB");
   }
 }
+// Full-bleed bands: 16:9 crops straight from the large sources, 2880px wide.
+const bands = sources._bands ?? {};
+const bandDir = path.join(ROOT, "public/work/_bands");
+await rm(bandDir, { recursive: true, force: true });
+await mkdir(bandDir, { recursive: true });
+manifest._bands = {};
+for (const [name, b] of Object.entries(bands)) {
+  if (name.startsWith("_")) continue;
+  const file = path.join(ROOT, b.src);
+  const meta = await sharp(file).metadata();
+  const h = Math.round((meta.width * 9) / 16);
+  const top = Math.max(0, Math.min(meta.height - h, Math.round(meta.height * b.y - h / 2)));
+  const out = path.join(bandDir, `${name}.jpg`);
+  const info = await sharp(file).extract({ left: 0, top, width: meta.width, height: h }).resize({ width: 2880 }).toColorspace("srgb").jpeg({ quality: 80, mozjpeg: true, progressive: true }).toFile(out);
+  const blur = await sharp(out).resize(16).webp({ quality: 40 }).toBuffer();
+  manifest._bands[name] = { src: `/work/_bands/${name}.jpg`, w: info.width, h: info.height, blur: `data:image/webp;base64,${blur.toString("base64")}` };
+  console.log("band", name, `${info.width}x${info.height}`, Math.round(info.size / 1024) + "KB");
+}
+
 await writeFile(path.join(ROOT, "lib/work-manifest.json"), JSON.stringify(manifest, null, 1) + "\n");
 console.log("manifest written");
