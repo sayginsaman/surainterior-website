@@ -1,0 +1,600 @@
+{
+ "boca-raton-residence": [
+  {
+   "src": "/work/boca-raton-residence/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBYdhHuVhhtlQOpmErL3ZgAA/VLlIJWZ1tSMHQRH+wZnHbqof9BpwXsy0Y9ee03AheOCi0Y+thP4EwNbl3zgLCYAGN0d78Sj5gpRtfLneKDtjjH6bO5J3ND5RsBPstH9AAAA"
+  },
+  {
+   "src": "/work/boca-raton-residence/02.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCw7BQGQSHOtUlaVYAA2/g3N5/7aGG7F3SLt2BrgESVYyWnNMLxICxzSGTzgEvU6PFHV6XsAKe4O+qMzPPk3mSsJFzaUUcyBNWVfLNCZhrRo57+BlS1rr4pk7bLFQeOECY/nxgAAA=="
+  },
+  {
+   "src": "/work/boca-raton-residence/03.jpg",
+   "w": 1761,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdMoACaAipibe6Z+AA/s8c5oxtHztluW+N04ReS+awkaF9ATRUE9inQpNbAwLEN86xTritOAU75nCyGiaBZWRgtx5egYGVVea53ErpleFPzW2Vv8309V5WiAAA"
+  },
+  {
+   "src": "/work/boca-raton-residence/04.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JYgCdMoADAXEJoFV0O/Gv/cAA/h4abpdIUdwvqlUgrDLqsw63lhrJuSX8MayxI8K8CY/FccEi18az1+hLwy2TVPZvaq0CCrd2YBWdgOYKVsnxv2dIEAAA"
+  },
+  {
+   "src": "/work/boca-raton-residence/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JQBOmUGUgBGrKxuOWhvrAAPXdaytXi87SFx5n04fTejSIOOUjxKzQO0GYfkKdeo4yWyjeBlI1I+9tsXEwnX4PvkFV73uEGUz72I+NLP/mXAp/+QLxFkXP2lX6VEYj3ZWUXBwA"
+  },
+  {
+   "src": "/work/boca-raton-residence/06.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoQABUAPu1iqk2ppaQiMAgBMB2JZQCdABhoYrmxPr6dLkAA/sBfeRUCcWei13okLwcTU4tdG13mv6buLEa/3C41GYaN9LBqWYx7u03q9wxt2J8jlPQ01rjYAAA="
+  }
+ ],
+ "biscayne-boulevard-residence": [
+  {
+   "src": "/work/biscayne-boulevard-residence/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCdMoADSZFTvmLsOlgEAP5RweVVj7zvDrOvaq9f58v2DsodaimhXKJra2W7UGcmPvxcGKWAjaEsU4ybx0yRxF2nUto4AAA="
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/02.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoQABUAPu1iqk2ppaQiMAgBMB2JYwCdABeijvXn9CXJxDAw2gAAyx3ixzT4x+TlBpFTqrR/u0vkMPgazbG6YX/PR6MUnR2WA7ZZjNnZjsGkn6avHAwa4uGfaBekgagA"
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/03.jpg",
+   "w": 1618,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JQBOmUABRHfyRt94wGLmIAP7b2YL7A50Xcw5PkCvZWX3hNTf4CPCSDtyewfRfo1UE6v8lMJEylQsAPX+ZADIAv/3kPVBinHGS2ojixCGLwW0fYAA="
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/04.jpg",
+   "w": 1648,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JYwCsABZfvfpL3n8I12IAAP0hwu3g3JPXR5Qz+OAd1xA+Ukxo1BxaRXn83g5XSm3L1/j88zS/A+9BJ+bq/DnJ+l2x/hADKHPM0krSfhAAAA=="
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoQABUAPu1iqk4ppaQiMAgBMB2JYwCdACHHZEYcs6mB4AAA/cnPJj60it3PUSOGUC7nPutCcSsvEXOpXZDSD0ehO/9wPuHgAAA="
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/06.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCdABk4CXJrU1j/EADN+SCVm+Nz107xy3jRjCBWD/uVO5GRO65Aiunty1v2H1SXCe9sFg+678MZpk34pq7Ap9Dl+u1w2pFkEwuWAAA="
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/07.jpg",
+   "w": 1642,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZwCdAB6z227bs2Z6yAD8x6+peYKqhz4AsiBdWSZfh3a7EOiVE+qmNWf+nNt0BAeRDgAA"
+  },
+  {
+   "src": "/work/biscayne-boulevard-residence/08.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JQBYeVgAQyUK4xEMWYADURBCfr1HGwBemnv72Jcp2Sl1+Tjec1Xlbix7AOiE6XW18C1nSW6kfDhrYCYjvkpdlDchNUZTgPiyKodDfpm93sgAA"
+  }
+ ],
+ "parkland-residence": [
+  {
+   "src": "/work/parkland-residence/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoACTRvxtcpwZewdAAD3HwygXNh76wK9qT6j72WASDrke0l28OWINylsMT0P+3fVbOavfQVoK7N2WD52qU68ZI8L4HKVh57iV3X1vma5DgAAAA=="
+  },
+  {
+   "src": "/work/parkland-residence/02.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYgCw7BE2OLQ42h4AAP6ozlXKPn9kC/846g1gk2NvfpaQlmw89lodxXCyeJ5oHJKIdzXaQVR8InNlVBrkdWcC8Xb3Gk7ad4KcAAAA"
+  },
+  {
+   "src": "/work/parkland-residence/03.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JQBOmUI4AA0knP616v3W0VJVgAPoQ7O0ArhdeBYSa5VgYIPV+T8fQ9tABFAMPLl9xWC8R4Gk5QXQjOn6DEjvUwEw/Rq2pZ7DZZhanWShokVg4BHxf/EUsXKiIoCZ63Y+e4gIiA9W0JEAA"
+  },
+  {
+   "src": "/work/parkland-residence/04.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JYgCdMoMYA+gBpNkuFxBI/w7AfbAA4lyAkXKc/H0VNL4KVeMuYtoqV14SojZa+pClmVBX9+yimh+82aQJU7Zz4SIfL0uwrnQEYtxOTkA3nHNj4lSkkpj44tT25StSjxtKng5nulCfI+F1ypygAA=="
+  },
+  {
+   "src": "/work/parkland-residence/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JQBOmUABfG9cI1eSEL2WAAP4vILVa51sLz6rJO59fvLmrpKkHp2Z8YXzDfF4MMEyKhUpg/u+4WDvsvhXn9JqEDnqIzx6cR34DT3HLbazQJ0IvdHTrEZLCEK53wxAJ6oFIAA=="
+  },
+  {
+   "src": "/work/parkland-residence/06.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYgC7IExCYGMpmXuluwAA/sxpPqECvhSgx6NirA1R3pNF1vJObCSUG+tXOAxgacS7f72GupTWVhPJVNLvcImKs5DWXg86Mx/pimUoac4V0BZu3ajKIgAA"
+  },
+  {
+   "src": "/work/parkland-residence/07.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JQBOgAnHP+i3SUADxxmOTwM3Sv7wZU3w1ED+L6sLIwHhhFmMq2BM8ho0y2Xr3H0cGnfH30CKyFeQHDcYRNvo7jzwAAA=="
+  },
+  {
+   "src": "/work/parkland-residence/08.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCsAYtU5sF8wmpQrEJtDCAA+/pm+sHLwxlyWP5xx+9Yczm+mP6Twvl7t0Kr3mRIzzHE2LsroLMvQ+bJ7pqvgwzO4BIsuyEjepo4q4JhFcD6anu//uSCmtsVcbtlolA4YBp+WMQIulayeHW/KiN0M5XjmiLoANNxf0rCOt04AA=="
+  },
+  {
+   "src": "/work/parkland-residence/09.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JQBOgBCdltO+bBJuEvSrAAM4NBsP3npKYYZnoCWboGmzh4n3xpbC7QgY0naAKrbzvSel9DTD6FN2NltvqVnhYoZE8Kyrj+T9Lrse4P0eDxOv+12buGWC1aiK7YjAJAhMaJeFd3MBgzqR0604+vgAA"
+  },
+  {
+   "src": "/work/parkland-residence/10.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZACsABsujXejSgAA+yEoMoolZl85z4htz6V/SbXYi1snqKNRUSUE4vkPlnzynUgqk6QVF0vkoaPnMCVIdlNHLhGKKN32Q5XLId+rJrvlqaldW6SJtje0dvjVwkC9SRYTH45uXzmTEVYulZHhotjt4AA="
+  },
+  {
+   "src": "/work/parkland-residence/11.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JQBOmUAUl6Ju6gUWdqrEu4y7BsADiM4LF4WNRvAT7ZaFpeSAAPMRqVRNncJYFRPDIs8JaGwihUwnMg3fefuX3qs+zessSBfie1xQ0EeOTD4XjsV6cL2cFhDaoKDMrnPUBt23CeXbABxdXYfgW570cYGJrAAAA"
+  },
+  {
+   "src": "/work/parkland-residence/12.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoADJ/ddR8lhT3DZcAD+cwQ3h3I/e8Cn3eVueS6tbbQtPi8S4XxDk+pFi7Jzk5eMsx+5flKZ3HSsqEyou4R/Fa1pvygTkCwwwRFUiQlVOzAq2RU9o1NknxAR9XZyZAAA"
+  },
+  {
+   "src": "/work/parkland-residence/13.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZACdABhKHiAcC14GQa0AAP4ucWT3dRtjAJWa2meL9tkpJM3tgFBwYysXNaU82Dlo9almWkgLQlZ+sL7g6rjj4Kbg5cYcci2ImfuHM4f1gPLEGMGBC+gA"
+  },
+  {
+   "src": "/work/parkland-residence/14.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JaACsABiemmMyMCMf26AA/nB/SZ+XK/GjYq/Wer3DLYMLl/xKvi0kjHPY9JCXbu3rET0etltIOaMnAc7zLI0o9Hl7etGbTIeUUvEe7XxIx94ZwkwAAA=="
+  }
+ ],
+ "fort-lauderdale-kitchen": [
+  {
+   "src": "/work/fort-lauderdale-kitchen/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCdABngDYtIygAA98MVIX84fp981ET3lCreHS5G1nqRfu942w36tE9+jUvfBeWgX9Fyt3fyuGCP/+7oukdrOEg6QAAA"
+  },
+  {
+   "src": "/work/fort-lauderdale-kitchen/02.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JYwC06BZ23OP2K42zDZZgANq8jLrWRHYoBKInoUmyHsBazyugcxegPHXc91VZGLNdyw2N7RSv5PzQK7HrZP17kSDqrE1Jlo4gtVyOAAA="
+  },
+  {
+   "src": "/work/fort-lauderdale-kitchen/03.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCsACKbBzGXtO+5wbx8gAD+dnYzx63yME9GI/f8yNOzgraoqfQ80Kpz+zZFci2+vR+0ZfxbqudYwcil9hFJ3Lvx1TFbKKxjNsizDb092RAUEnAzfNOAAAA="
+  },
+  {
+   "src": "/work/fort-lauderdale-kitchen/04.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZQC7ACDlw0y29JlYcMAA/uktQYAiWmolOZbX468h21k9fte59wl1Fu9+T8+xMNN1wOdwtE1vOszd1wRF+hsWUVj2KmcgAAA="
+  },
+  {
+   "src": "/work/fort-lauderdale-kitchen/05.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoQABQAPu1orU6ppiSiMAgBMB2JYwCdABDl8dsE7XgA/hRr4AcKoLA5LWVcu3RAxHgIEYxa5rEYZA7HuDDX88/mNCy7CPrC21Z6+MaNN5asD4ijSjDoAAAA"
+  },
+  {
+   "src": "/work/fort-lauderdale-kitchen/06.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoQABQAPu1kqU2ppaQiMAgBMB2JYwCdABtTezc9yRLvpC4A/hRdsG9kfN2Vc9IbLl+5XMOR/WrK4E0RgAQFk63FFFEzojLWIdFIKFhPUtFBa5oun3OPNgDegAA="
+  }
+ ],
+ "pembroke-pines-residence": [
+  {
+   "src": "/work/pembroke-pines-residence/01.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYwCdABbjFimi3d7zwADdc8mFmPYRWIYJgchBbAYYxwF0y6Fpk5pFHI7c05d8189cs2LVmQaoWftz4NiElWlvsWYDh/2uIbD41W2K55EqlSYA"
+  },
+  {
+   "src": "/work/pembroke-pines-residence/02.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBdggQAmMGcN9vNgye0b+wYAAP4nm61F3f6Z3YRVN3HfvLnGHJ5cN+oBTLaviaw4M1VT7iIugDqPp+PxDTZYBN2IaMZXqmJrPIepfVsQ6S+sKrofnPLbfMGtZDXNh3RgDA0AAAA="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/03.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZQCdACKF61A3Y7+YBgAA3PPkPExGRxdjySgFe3nSe62bkmWnHlYdk5V/6dZS32j9BXliKWpgAGxObEiEjh6KGD3U5/tCwn3UGKL2B1xdAVW2Eoaiotxxeu8KAAAA"
+  },
+  {
+   "src": "/work/pembroke-pines-residence/04.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQC06CG80svxfjcAAPRtVSaDoOjPTzJhRLJZlJxAxCgVsoTVAkkcI7Ga4msbeKHsbsZLf3Z0wEzFuNV8Gvzvy+T0VkQbAAA="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwAwCdASoQABUAPu1iqk2ppaQiMAgBMB2JZQCdAB6MwzuaNt0oGAD+iR/ALubjxjiA7nDo5MgaPFi31K4JSiJ7Cs4vUmUFMZy5YFyF/NisA9LJyFoq+TRB6YY/dNiypMWOfI6KTkx7AVv2Me2lCm/89AAAAA=="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/06.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCdAButDdr7bMXdVEAA/sws9eJQETjbKFYhnCou0lSUNEAZFitQSVbj1BBW1OfVMT6ZVhI14tgfMqAIGX9VMEKqtqR/owbCIMtGxx4Eo6cMrlL/p4GL6Aa7bmKCiJPFjl3WYAAAAA=="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/07.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZQC7MoADUmx54Lc0SQjFdgAA/sW3CEb6EOa3kmGWqnTKBtqErHcLiOIoHxR01tkzRWXkceE3J8PVcCVGE/UX1+aC/81nAn0vVbTPxVCSmAoa6/TL5PwLni0AAA=="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/08.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JYwCsACHpXoGQSqj/DlKCEADOOJapeI3eeN90+Y/JxiuC2mmuUZHs0LzNMuMfAYMRGCsFCk+bVLCpbcRWsGljjn4cCrBcQaXkPhky5kjlzh5RKmAAAA=="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/09.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoQABUAPu1iqU2ppaQiMAgBMB2JYgCdMoC4AAxbYxPzOU7LAUgA/ryFfpkZ0X+uxmUu6tT3rhAoHwUpkIG69BZYLYPE5/5zfUmEOO5e669yIDoNebO7VnpUy4EOuXvBRuTNk3/2hnsNmrHUZTAAAA=="
+  },
+  {
+   "src": "/work/pembroke-pines-residence/10.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCdACP3gB1DFtsaFX3AAPYwVmo6vxQpAsRecUOGpvEaywEdxBp2ySr08ejd/bWbvq5lOR6+NFcVtIZ2O/tJQVgSreJDQKwKVay0Ac2uggAA"
+  },
+  {
+   "src": "/work/pembroke-pines-residence/11.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdACF5sLsjKkqMSCXEAADyo5cDOppEmcqqWusdoNfpr8/uTe/I9Iyr/abFowJk3IW+AS7KAaxwaQHkYbzMrZCDSh73k5GP35JopAChlU6psL+yEoAA"
+  },
+  {
+   "src": "/work/pembroke-pines-residence/12.jpg",
+   "w": 1650,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JZQCo9CFNhM0VFrKsfrAA/cBp4VCt6mpOMOFIirsYU/eEbBY94Qp7+zb1M3CJe+9Wl8tBAbQ5sI28xRgIHpm61sLkt27s0zfXdy9gXE1O4AAA"
+  }
+ ],
+ "crystal-tower-residence": [
+  {
+   "src": "/work/crystal-tower-residence/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZQCdAB5Xe03KKGi72lb6XgAA/dSMT25wHsNanzjRe47kOoUnYZI7h9JD2xXMtG0Yt7aiZGX0BJwAWZbvtiUD477FRJSO2O3/ngAA"
+  },
+  {
+   "src": "/work/crystal-tower-residence/02.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCdAB0k9INu+wNQlwE6gAD+jGM9UvMGrEUPyc/Pzvnm3ehd/5ANJV+C9mItxozqnkwQ1rMsootgBRUT5tVN68mfMJTJZduhMmJv7QrecxInPk+lEU38oY5L6lS9fBJ5wAAA"
+  },
+  {
+   "src": "/work/crystal-tower-residence/03.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZwC7ABiTFFn92QgA/d7p3+jcMxhgUwDd7BPfcly5e15WKFkN1liu6td6F9DFMzADo3DoYK4wAXIAAAA="
+  },
+  {
+   "src": "/work/crystal-tower-residence/04.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCdB2gAR7YSd6+tB4615uKTAAD+yhZ8LTS6p+qE3rhe2OmWam+TS3z7rK3Ww/2qHmW9Lg1tNtlAd6dcokXkrZTSFJLzutncMu7iuKNhkGghvJrjfkV4ZLa7L5o4CY9BZwZQE7m9cC3qPHo15eAA"
+  },
+  {
+   "src": "/work/crystal-tower-residence/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JZQCdABbKPmkVPiQAAPlGmuvG3y75W/cYTg/byiVd07qK04hvZ9gve5hYvMtjjqtex5Iyt5jwAA=="
+  },
+  {
+   "src": "/work/crystal-tower-residence/06.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoQABUAPu1kqU4ppaOiMAgBMB2JZQCdMoADTcwva4/BWJCfNoAA/q6+ANjmmjxDgLHYBjPGhnt3yfqzuwrnlDf6zv7TLHXn8sNPU6/MNsve/LZYgwtE9SnXp6/bMbe0isy2nf1DOrEsAA=="
+  },
+  {
+   "src": "/work/crystal-tower-residence/07.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQAAVFJItnu3ni4vAAD+xVVVHlztCHvuorQwOlp+/Avz90Lz/JzG/7FxsY0drAbK07KKd73TEMh+HEfdNC5iibw/mgAAAAA="
+  },
+  {
+   "src": "/work/crystal-tower-residence/08.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQC7ABr4v53CswAA/eqEbkdAjLq4rNgJuj6EsNpLkat6gRZgW/9ek0T4VIsTG+9Gt2nhNwT3m0062hcLJluq0WL8ygAA"
+  },
+  {
+   "src": "/work/crystal-tower-residence/09.jpg",
+   "w": 1649,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCw7Bulf/m5N4bQo0vAAPxQG/y17ytq6It+N1iwR2sqpoZtDxVYWYHf+O1A833hVqn88MzKyBsYjX3WlcwRgAA="
+  }
+ ],
+ "miami-beach-nursery": [
+  {
+   "src": "/work/miami-beach-nursery/01.jpg",
+   "w": 1772,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZQCdMoACnwBmB6lpPImf0AD3oOFzRtmd3zWCRxtWMRHohPQCKtEWvXIcpgqQw7R2E8IfPh4lpUfgn+p6lrgA"
+  },
+  {
+   "src": "/work/miami-beach-nursery/02.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoQABUAPu1iqk2ppaQiMAgBMB2JYwCdMoACNcdbay8X4wAA/pRu8wmfwg7zZR8JMhmr26j0rwwDCMPQhi6iVRE/oxm7gM6gDBN35b8cd+BFHwAA"
+  },
+  {
+   "src": "/work/miami-beach-nursery/03.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoQABUAPu1kqU2ppaQiMAgBMB2JZQCw7BCeFJSf6PATrAAA/q7f0XDdqugAP09RbshCvVXgjoxni1SwY9+ezX9YSJSYPPXUZ2hGo8V6AbVMy7MHMdu5wAAA"
+  },
+  {
+   "src": "/work/miami-beach-nursery/04.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoQABUAPu1iqk2ppaQiMAgBMB2JYwC7ACHqjYtYi/DZgAD3ptKm4ZDTLa77cBWjeeKlErECDCWYDitL3H7T/LF0bRlUul4WYbYahUOgldg8JQAleSVDZJAqVIAAAA=="
+  },
+  {
+   "src": "/work/miami-beach-nursery/05.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYwCdACBfOCxzbSsMeADv/OceWCXYpRFoTB/AIb49TQxe0Z+riuvUzGoJcgv5NhPg1z/w9RB2PcD2GN6E0Dx/aRKlEvPgHqXrtU3pM/6QtIhDgONl4AAA"
+  },
+  {
+   "src": "/work/miami-beach-nursery/06.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCdMoADS/iGaIxoLAIH6UAAzWgUJF+Spm/gPTwq+GiEGVToaSlyXX8l+T2Uqokrb07uCqlxqTnaLH5ATQAA"
+  },
+  {
+   "src": "/work/miami-beach-nursery/07.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JZwC06Bgej0io6gAA/shBgZTxc6D9LQCmOxAou7AT+mjfmxIO/u/xRkeAFZ2AAAA="
+  },
+  {
+   "src": "/work/miami-beach-nursery/08.jpg",
+   "w": 1643,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZQCdAA1St9JwTXEAAP5SujSUFUDSvBvifaAKuTmketnkLdygH/k8orAAAA=="
+  }
+ ],
+ "fort-lauderdale-bedroom": [
+  {
+   "src": "/work/fort-lauderdale-bedroom/01.jpg",
+   "w": 1120,
+   "h": 2037,
+   "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBACdASoQAB0APu1iqU2ppaOiMAgBMB2JQBOmUAnAArXjgrywq2ADpIAA/sDqbKnF/V0LBSnunLnVaBZ3eSpExz49lLi5JQ0/voUImt76XAMkq9UQzbgngsqmyqj1acoTNvz/cSbaEJS89WYn1Wxg2aRtLS3uo6VYNBKidFeGHk/T18TN9TBT4O3FUzm9YS167MdaugE3+JoRFG4Hh4e3Yvq0oYzQr2yC5ZK2AAA="
+  },
+  {
+   "src": "/work/fort-lauderdale-bedroom/02.jpg",
+   "w": 1160,
+   "h": 2048,
+   "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOmUAS4AwUHcjL5sF+frB/qlmNw8AD+ePTCzez8oZmLXhEuQj9hnpScuK+CxHhrX0XzwbD5pwa0lDpZf/LSalcLfcJOaZlGSgD+nXPCslglkEy5w6RGwpMH08W2OXX9ssP2F5vN+xfc8Oo5xEGa0beaeKEby4D6L+gL6ComezrqLmnTOloR3fsFMvhuRZCvDGbxgLJAaDt2rl+/AAAA"
+  },
+  {
+   "src": "/work/fort-lauderdale-bedroom/03.jpg",
+   "w": 1156,
+   "h": 2048,
+   "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBbZA0aj/QDPmBTb2s82HgAA/umdC1XgFjYGKrD3LRb0g1UrFJXT4SlV28X1vGNwaX6wQfjusWbb11rZEXpM/5jC1Q4RN//ECbDxgQxz/PiAphXGVYnsBrQuPMc5gBt11WYnAYlGpP2TYAA="
+  },
+  {
+   "src": "/work/fort-lauderdale-bedroom/04.jpg",
+   "w": 1046,
+   "h": 1849,
+   "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOgMZPb4AdzuNxkw1t2Rt+TgAD+vIWRkdF79oKWQ96HEm5V5f1KUPtKCadI2LwbIWVIpglmeGraXANUnEpeDZSPQSjKHip9AOuvhANO8cwkbdFimmK+VqAyS9AzW8Tk4QgyMj3C9HkDGO7RhqVhEcObVRYNs4bVvbLFBx+2JLdQLuuVouX0DVsa+Vx9C2x/c6LHs8s/01y2UqHjcQS+WAAAAA=="
+  },
+  {
+   "src": "/work/fort-lauderdale-bedroom/05.jpg",
+   "w": 1122,
+   "h": 2048,
+   "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoQAB0APu1kq04ppaQiMAgBMB2JQBOgA3Bw6VwqWjb4gRtUAPuSEM7ZOJeeLEcrdus6U5ITMm0lX+k7+pLivxPakg2MRRe0AUny666CgBxZFGKhhnOXLnL8mfWDSN3m5ZwcS6dHmWTLjsJown/DkAtYj8k3t81gAAA="
+  }
+ ],
+ "cape-coral-house": [
+  {
+   "src": "/work/cape-coral-house/01.jpg",
+   "w": 1284,
+   "h": 833,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAoAA4BaJYwCsADyhKDQAP7ghE3KVN+0A04jype2AcwKiU2X++VL9Me68UDRqOqOLbGSDQAAAA=="
+  },
+  {
+   "src": "/work/cape-coral-house/02.jpg",
+   "w": 1284,
+   "h": 857,
+   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAA4BaJZwAAudDAd/1a5IAAP7ex2N1IJMy9h0xAt5Eudfie8Y1/MjQyfErrzhGOZ19C+nZn6+OujKWAAAA"
+  },
+  {
+   "src": "/work/cape-coral-house/03.jpg",
+   "w": 1284,
+   "h": 842,
+   "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsAA4BaJZwAAjtvRwJxgAD+31v9p9qcmbCTfXyu8+pCOSR38LlAeqmsdkNoyn6hno95lUCTvPK4X7hp5UZ3uV0cAA=="
+  },
+  {
+   "src": "/work/cape-coral-house/04.jpg",
+   "w": 1284,
+   "h": 836,
+   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAoAA4BaJZwAAlrrmHAAAAD+bOWMTu3/pppcQGZAW91LGCUn4iCHZN4KPEZKNcBKRqVKyII2KAAA"
+  },
+  {
+   "src": "/work/cape-coral-house/05.jpg",
+   "w": 1284,
+   "h": 829,
+   "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAoAA4BaJYwAAuBWZWBBAAD+ZcA94tXq07gBJCFKADf8DaZqDKdzH9dBEWUinrL59HrcAAA="
+  },
+  {
+   "src": "/work/cape-coral-house/06.jpg",
+   "w": 1284,
+   "h": 839,
+   "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAoAA4BaJZQAAp0EvyUAAP7gptg9Xlqo1adqHly276/A9ZrkH14kHzQh/N4r3EQ78b3nXc3WgKPyl22e2sn0F2AAAA=="
+  },
+  {
+   "src": "/work/cape-coral-house/07.jpg",
+   "w": 1284,
+   "h": 867,
+   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQAAsAA4BaJZwC7AELYa9KVxHwAP6zXjOwG9k4/kGcP10rN3kopmvJjpPggAAA"
+  },
+  {
+   "src": "/work/cape-coral-house/08.jpg",
+   "w": 1284,
+   "h": 938,
+   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAwAA4BaJZQCsAEQ9rT4n1paAAD+yF+CX41W5Bi+m5dNv4bDPlSCDaGioDXuG1RudtT0VARZu4vQr8MCiogA"
+  },
+  {
+   "src": "/work/cape-coral-house/09.jpg",
+   "w": 1284,
+   "h": 814,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAoAA4BaJZQAAujfQKmsQlAAAP7Tqvejrscxtd9Rgr4uBqCuUXTxRrFKX8QH4jFgULiylbAAAA=="
+  },
+  {
+   "src": "/work/cape-coral-house/10.jpg",
+   "w": 1284,
+   "h": 844,
+   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAsAA4BaJYgCdAC//KMAAP5sg+4cWZ3lhbtQ6G4uZKB97dAROkQPc43CVFQ4zfs7F9pA0ZXIeP3D7oMvLnNPAMFkWnF56y8EqZVxwAA="
+  },
+  {
+   "src": "/work/cape-coral-house/11.jpg",
+   "w": 1284,
+   "h": 828,
+   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQAAoAA4BaJZwAArCuMHYFqJ3gAP7emjlw/zHcIgPZmNTUKgjaEdMfQPUQAzM93PHAAA=="
+  }
+ ],
+ "armani-casa-residence": [
+  {
+   "src": "/work/armani-casa-residence/01.jpg",
+   "w": 1600,
+   "h": 1067,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAsAA4BaJZQC7AEOI2vRgAD+5xhjc5YSD00XBBbFwK3yc48FFc0TfQVQ2HEABfYhGHUeAFK4AA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/02.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJZwAAxfxWQwcNy/AAP7Upviwt0npL8ngJQu8/JlUXOVoMmjmTupYMtOO8joB9Bl3nuOmDXGVRIEMPAAAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/03.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAsAA4BaJZQC7AEObpyzShkAAP7nGGNzlhIPTRbse/x25VaBS6FVCKEAR+fcACDgAbTyAP6gAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/04.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAsAA4BaJZQAAoamz6wAAP7W/wl+paueF7NihJWBPNJGuR8tT5xBOIlAMTHuWKRM/U5LY+cM9h/hRJwvpMwM/sa1gapwIAA="
+  },
+  {
+   "src": "/work/armani-casa-residence/05.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAsAA4BaJZwAApPC2Rq6AAD+0+Sw1lfMymN4QiFTDvrMxr8DObsDnPOy6/r5L7Ssw4V+CrIAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/06.jpg",
+   "w": 1600,
+   "h": 1067,
+   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQAAsAA4BaJaQAAt0AIu0kgAD+xNnIIij33Xk3aIcCZRXePxfDQB2uAAA="
+  },
+  {
+   "src": "/work/armani-casa-residence/07.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoQAAsAA4BaJZQC7AEPChS86CAqAAD+5xQ/k42zf34hOgUqVbY5U/ISJpr73cPn2LdAhzDC6OrHCpRrqAAAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/08.jpg",
+   "w": 1600,
+   "h": 1067,
+   "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQAAsAA4BaJZwAAlbVvM0AAP37e7is13lOUEGORHGVSTfTmXwF85JpG6V5LT0KAAA="
+  },
+  {
+   "src": "/work/armani-casa-residence/09.jpg",
+   "w": 1600,
+   "h": 1066,
+   "blur": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoQAAsAA4BaJZwABDOAAP7tLp6x7KOTJ8AAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/10.jpg",
+   "w": 1200,
+   "h": 1600,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JQBOmXkBRCUf1zX9spgAA/tHd4KlmWo4RigA/SRnb6tTHTuhK1wU/KD5e/JMd3mFD+C6vZOsMkxP6Tijw1bVNiPdlSJ927ZwVAiuDFkuNEK/dMAc6JWRZqCgWPOfb7z+rMAAA"
+  },
+  {
+   "src": "/work/armani-casa-residence/11.jpg",
+   "w": 1200,
+   "h": 1600,
+   "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JbACdMoADQdVl/wBE9k1qHoAA/u6TzJhQVbtzn3VDfENMHhp6ss/7EupXiHNnSN+UQGW9yxqJQBwXuxFPPkCjKNLiJ3a/X1SyCQ0Jn37MDlBbpNuiRqlWUP4iBSPXVjixFIkxLM8dMI4psRfTRzgAAAA="
+  }
+ ],
+ "gorhan-design-studio-center": [
+  {
+   "src": "/work/gorhan-design-studio-center/01.jpg",
+   "w": 1630,
+   "h": 872,
+   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAkAA4BaJZQAApK3AcEwAP738WVBQqiMDEvUWyXA0dL6FL/aizHAZVAq49ROie8AAA=="
+  },
+  {
+   "src": "/work/gorhan-design-studio-center/02.jpg",
+   "w": 1263,
+   "h": 1427,
+   "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoQABIAPu1iqU2ppaOiMAgBMB2JZwAAetJ4QlgA/vCRpdPBCU5ZHAGXLQd7a3/wAAA="
+  },
+  {
+   "src": "/work/gorhan-design-studio-center/03.jpg",
+   "w": 1146,
+   "h": 1160,
+   "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoQABAAA4BaJaVe6YAAPIAA/vNeRL4Y4R03YwAmqWcmWH27SGhwAA=="
+  },
+  {
+   "src": "/work/gorhan-design-studio-center/04.jpg",
+   "w": 1331,
+   "h": 1097,
+   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAA0AA4BaJZwAAu18P1YAAAD+9+8+PQp4VwgLFxvDfC8ipnQ3h7PIDu+iSN4G3nS6kWLQEIAAAA=="
+  },
+  {
+   "src": "/work/gorhan-design-studio-center/05.jpg",
+   "w": 1029,
+   "h": 1109,
+   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAwCdASoQABEAPu1iqU2ppaOiMAgBMB2JZ1TAADctNQUQAP7wTbneWaJYRLGDWAZVxu46FfsznZFNkxogzfttitaH3AAA"
+  },
+  {
+   "src": "/work/gorhan-design-studio-center/06.jpg",
+   "w": 783,
+   "h": 414,
+   "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAgAA4BaJQBOgB7HHXEiR/2AAP6YruNcEAEHRUWBQfLv8njcbiY2VIfStMVls4mIKHSK0+aKyJ9W9pEF87TIAAA="
+  }
+ ]
+}

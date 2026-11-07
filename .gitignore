@@ -15,3 +15,16 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Raw photo drops from Sura. Folder names carry client names and the files are
+# 20-30 MB PNGs. Only the processed web copies in public/work/ are committed.
+assets/*
+!assets/portfolio/
+!assets/video/
+scripts/photo-sources.local.json
+
+# Next / tooling
+next-env.d.ts
+*.tsbuildinfo
+.turbo/
+out/
