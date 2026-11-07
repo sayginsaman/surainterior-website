@@ -1689,7 +1689,11 @@ textarea[aria-invalid="true"] {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(20, 16, 13, 0.62) 0%, rgba(20, 16, 13, 0.22) 50%, rgba(20, 16, 13, 0.05) 100%),
+    linear-gradient(0deg, rgba(20, 16, 13, 0.5) 0%, rgba(20, 16, 13, 0) 55%),
     linear-gradient(180deg, rgba(20, 16, 13, 0.4) 0%, rgba(20, 16, 13, 0) 22%);
+}
+.page-hero .display em {
+  color: #eadfd1;
 }
 .page-hero-copy {
   position: absolute;
@@ -2122,4 +2126,194 @@ textarea[aria-invalid="true"] {
   flex-wrap: wrap;
   gap: 1.2rem 2.6rem;
   margin-top: 3.2rem;
+}
+
+/* ───────── about page ───────── */
+
+.label-rule::after {
+  content: "";
+  width: 4rem;
+  height: 1px;
+  background: var(--taupe);
+}
+.label-center {
+  justify-content: center;
+  margin-bottom: 3.4rem;
+}
+.label-center::before,
+.label-center::after {
+  content: "";
+  width: min(12rem, 18vw);
+  height: 1px;
+  background: var(--taupe);
+}
+
+.studio-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+  padding: 16vh var(--gutter) 14vh;
+}
+.studio-intro-copy > p:not(.label) {
+  color: var(--ink-2);
+  font-weight: 300;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  max-width: 34rem;
+  margin-bottom: 1.2rem;
+}
+.studio-intro-copy .btn {
+  margin-top: 1.4rem;
+}
+.studio-intro-media,
+.founder-media {
+  position: relative;
+  overflow: hidden;
+  background: var(--sand);
+}
+.studio-intro-media {
+  aspect-ratio: 4 / 5;
+}
+.studio-intro-media img,
+.founder-media img,
+.philosophy-img img {
+  object-fit: cover;
+}
+.studio-intro-media figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2.4rem 1.2rem 1rem;
+  background: linear-gradient(0deg, rgba(20, 16, 13, 0.5), rgba(20, 16, 13, 0));
+  color: var(--cream);
+  font-weight: 500;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.philosophy {
+  padding: 4vh var(--gutter) 18vh;
+  scroll-margin-top: var(--header-h);
+}
+.philosophy-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem clamp(1.25rem, 2.4vw, 2.4rem);
+  text-align: center;
+}
+.philosophy-img {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--sand);
+  margin-bottom: 1.6rem;
+}
+.philosophy-list h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+.philosophy-list p {
+  color: var(--ink-2);
+  font-weight: 300;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+
+.founder {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background: var(--sand);
+}
+.founder-copy {
+  padding: 16vh var(--gutter);
+}
+.founder-copy .h2 {
+  font-size: clamp(2.3rem, 3.6vw, 4rem);
+}
+.founder-lede {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.4rem, 1.9vw, 1.85rem);
+  line-height: 1.35;
+  margin-bottom: 1.6rem;
+  max-width: 36rem;
+}
+.founder-copy > p:not(.label):not(.founder-lede) {
+  color: var(--ink-2);
+  font-weight: 300;
+  max-width: 34rem;
+}
+.founder-facts {
+  margin: 2.6rem 0 2.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  max-width: 34rem;
+}
+.founder-facts dd {
+  font-size: 1.35rem;
+}
+.founder-media {
+  min-height: 100%;
+}
+
+.apart {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(2rem, 8vw, 9rem);
+  padding: 18vh var(--gutter);
+  background: var(--paper);
+}
+.apart-head {
+  position: sticky;
+  top: calc(var(--header-h) + 6vh);
+  align-self: start;
+}
+
+@media (max-width: 1100px) {
+  .studio-intro,
+  .founder,
+  .apart {
+    grid-template-columns: 1fr;
+  }
+  .apart-head {
+    position: static;
+  }
+  .studio-intro-media {
+    aspect-ratio: 4 / 3;
+  }
+  .founder-media {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+  .founder-copy {
+    padding: 12vh var(--gutter);
+  }
+}
+@media (max-width: 900px) {
+  .philosophy-list {
+    grid-template-columns: 1fr;
+    gap: 3.4rem;
+  }
+  .philosophy-img {
+    aspect-ratio: 3 / 2;
+  }
+}
+@media (max-width: 760px) {
+  .studio-intro,
+  .apart {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+  .label-center::before,
+  .label-center::after {
+    width: 2.5rem;
+  }
 }

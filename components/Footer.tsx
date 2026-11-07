@@ -34,6 +34,9 @@ export function Footer() {
         <div>
           <p className="label">Explore</p>
           <p>
+            <Link href="/about">About</Link>
+          </p>
+          <p>
             <Link href="/services">Services</Link>
           </p>
           <p>

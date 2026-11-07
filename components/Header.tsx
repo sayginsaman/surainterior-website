@@ -10,7 +10,7 @@ const NAV = [
   { href: "/services", label: "Services" },
   { href: "/#work", label: "Work" },
   { href: "/#process", label: "Process" },
-  { href: "/#about", label: "About" },
+  { href: "/about", label: "About" },
 ];
 
 export function Header({ solid = false }: { solid?: boolean }) {

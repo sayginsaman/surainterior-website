@@ -125,6 +125,25 @@ export const differentiators = [
   { title: "Personal, detail-focused", text: "A limited number of projects at a time, with direct communication throughout." },
 ];
 
+// About page, "Our philosophy". Images are real project details.
+export const philosophy = [
+  {
+    title: "Experience",
+    text: "More than two decades of practice in interior architecture and design, in the United States and abroad.",
+    image: { project: "pembroke-pines-residence", index: 9, position: "50% 40%" },
+  },
+  {
+    title: "Design vision",
+    text: "A considered approach that balances aesthetics, function and detail.",
+    image: { project: "biscayne-boulevard-residence", index: 6, position: "50% 30%" },
+  },
+  {
+    title: "Execution",
+    text: "Drawings, specifications and coordination that carry each design from concept to the finished room.",
+    image: { project: "boca-raton-residence", index: 3, position: "50% 60%" },
+  },
+];
+
 type Img = { src: string; w: number; h: number; blur: string };
 
 export type Project = {

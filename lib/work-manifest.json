@@ -421,6 +421,12 @@
    "w": 2880,
    "h": 1620,
    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkAA4BaJYgCdAD6HRE8uQAA8B075r+1E2IMGBMThBT16v3kJZjQLSzQMJuPuMRnH1ZxQ2YwmP/tVpLF+YAA"
+  },
+  "lounge": {
+   "src": "/work/_bands/lounge.jpg",
+   "w": 2880,
+   "h": 1620,
+   "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJQBOgCHIc4mWaAD+wb+JHr+6rb4m2c24rA20/EH24vWRTC9DjJ+S6r5/iqqbEEH82lossXWUxOxcJqmU24YAAAA="
   }
  }
 }

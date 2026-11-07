@@ -296,6 +296,11 @@ export default function Home() {
                 Her work moves easily between the concept and the shop drawing: the mood of a room and the dimension of a drawer, the material palette
                 and the way it will be fabricated and installed. The studio keeps a deliberately small number of projects so each one gets that attention.
               </p>
+              <p className="svc-more" data-reveal>
+                <Link className="text-link" href="/about">
+                  More about the studio <span aria-hidden>→</span>
+                </Link>
+              </p>
             </div>
             <ul className="diffs">
               {differentiators.map((d, i) => (
