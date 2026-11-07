@@ -31,6 +31,31 @@ durduğu için tura alınmadı. Final cümlesi "Beyond design. Into detail."
 artık stüdyonun imzası olarak pencere ışığında, "Book a consultation" linkiyle.
 Alt şeritteki proje adı, o an hangi projedeysen onu gösteriyor.
 
+### Her projede daha uzun kalmak (aynı gün, ikinci geri bildirim)
+
+Kullanıcı: "Her sahne biraz daha uzun olsun, şu an çok kısa hissettiriyor,
+direkt farklı bir eve geçiyor."
+
+- Her projeye ikinci bir klip eklendi (`f2`, `m2`, `s2`). İkinci klip,
+  birincinin **gerçek son karesinden** başlıyor (o kare çıkarılıp start image
+  olarak verildi). Bu yüzden aynı ev içindeki birleşim görünmüyor; dissolve
+  sadece projeler arasında var.
+  - Fort Lauderdale: tezgah boyunca sola, LED'li dolapların altına doğru kayma
+  - Boca Raton: media wall boyunca sağdaki ışıklı nişe doğru kayma
+  - Biscayne: adanın yanından sağdaki camlı vitrin dolaba doğru dönüş
+- Sahne 1500vh → 2400vh (telefonda 1300 → 2000svh). Hero başlığı daha kısa
+  bir scroll aralığında (P 0–0.055) kayboluyor, metinler her projede daha uzun
+  ekranda kalıyor ve aralarda yazısız, sadece kameranın aktığı anlar var.
+- Boyut için masaüstü encode CRF 22 → 24, mobil 25 → 26.
+- Seçilen devam klipleri: `f2` (varyant 1, tezgah boyunca kayma), `m2`
+  (varyant 1, nişteki seramiğe kadar yaklaşma; son saniyeler hızlı olduğu için
+  9 sn scroll payı), `s2` (varyant 1, sakin; diğeri sonda uydurma bir kapı
+  gösteriyordu). 6 klip, ~96 kredi.
+- Ölçülen birleşim farkları (aynı ev içinde): f→f2 2.5, m→m2 2.6, s→s2 2.2,
+  b→c 2.2 (/255). Gözle fark edilmiyor.
+- Toplam boyut: masaüstü 37 MB, mobil 14 MB (9 segment). Sırayla yüklendiği
+  için açılışta yalnızca `f` + `f2` iniyor (~10 MB masaüstü).
+
 ## İlk karar (Pembroke Pines tek sahne)
 
 - **Sahne:** Pembroke Pines Residence mutfağı. Elimizde aynı odanın 12 gerçek

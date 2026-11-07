@@ -439,7 +439,7 @@ em {
 
 .scene {
   position: relative;
-  height: 1500vh;
+  height: 2400vh;
   background: var(--cream);
   color: var(--cream);
 }
@@ -1581,7 +1581,7 @@ textarea[aria-invalid="true"] {
     --header-h: 64px;
   }
   .scene {
-    height: 1300svh;
+    height: 2000svh;
   }
   .scene-shade {
     background: linear-gradient(0deg, rgba(16, 13, 11, 0.86) 0%, rgba(16, 13, 11, 0.42) 42%, rgba(16, 13, 11, 0) 66%),

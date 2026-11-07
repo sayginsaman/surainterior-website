@@ -117,7 +117,7 @@ export function Scene({ segments, beats, hero, credit }: Props) {
       // hero: we fly through the headline into the room
       const h = heroRef.current;
       if (h) {
-        const k = smooth(clamp01(P / 0.085));
+        const k = smooth(clamp01(P / 0.055));
         h.style.opacity = String(1 - k);
         h.style.transform = `translate3d(0, ${-k * 4}vh, 0) scale(${1 + k * 0.35})`;
         h.style.filter = k > 0.01 ? `blur(${(k * 10).toFixed(1)}px)` : "";
