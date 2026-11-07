@@ -273,12 +273,12 @@ metinde temiz bir grotesk. Font seçimi tasarım aşamasında yapılacak.
 ## 7 · Açık sorular (build öncesi)
 
 **Kullanıcıya / Sura Hanım'a sorulacaklar:**
-1. Logo veya marka dosyası var mı?
-2. Fotoğrafların **orijinal yüksek çözünürlüklü** halleri gönderilebilir mi?
+1. ~~Logo veya marka dosyası var mı?~~ → Raster lockup geldi (2026-11-07), SVG'ye yeniden çizildi. Orijinal vektör hâlâ istenecek.
+2. ~~Fotoğrafların orijinal yüksek çözünürlüklü halleri~~ → Geldi (çoğu 4× upscale PNG), `05`.
 3. En az 2–3 proje için **render + teknik çizim** (Render-to-Install üçlüsü) var mı?
 4. Kapaktaki **spiral merdiven** Sura Hanım'ın projesi mi?
 5. Mutfak videosu hangi proje (Biscayne Boulevard mı)?
-6. Her proje için müşterinin **yayın izni** var mı?
+6. ~~Her proje için müşterinin yayın izni~~ → Kullanıcı Sura Hanım'dan izin aldığını bildirdi (2026-11-07).
 7. Türkiye deneyimi biyografide **yazı olarak** geçsin mi? (Görseller zaten kullanılmayacak.)
 8. "Architect" / "Interior Architecture" ifadeleri: avukat teyidi alındı mı? (`01`)
 9. Sokak adresi sitede yayınlanacak mı, yoksa sadece "Boca Raton, FL" mi? (Öneri: sadece şehir.)
@@ -289,8 +289,8 @@ metinde temiz bir grotesk. Font seçimi tasarım aşamasında yapılacak.
 
 **Teknik kararlar (bizim):**
 14. ~~3D yaklaşımı~~ → **C · Hibrit seçildi** (2026-11-06). Detay §2b.
-15. Hosting: Vercel mi?
-16. Framework: Next.js mi?
+15. Hosting: Vercel mi? (açık)
+16. ~~Framework~~ → Next.js 16 (App Router).
 
 ---
 
