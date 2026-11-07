@@ -25,8 +25,13 @@ export const STAGES = ["Just exploring", "Buying a home", "Planning a renovation
 export const TIMELINES = ["As soon as possible", "1–3 months", "3–6 months", "6+ months"] as const;
 export const CONTACT_PREFS = ["Email", "Phone", "Text"] as const;
 export const SOURCES = ["Google", "Instagram", "Referral", "Realtor", "Contractor", "Other"] as const;
+export const CONSULT_FORMATS = ["At my home", "Online video call", "Not sure yet"] as const;
+export const CONSULT_TIMES = ["Weekday mornings", "Weekday afternoons", "Weekday evenings", "Saturdays"] as const;
 
 export type Inquiry = {
+  kind: "inquiry" | "consultation";
+  format: string;
+  times: string[];
   name: string;
   email: string;
   phone: string;
@@ -58,15 +63,20 @@ export function validateInquiry(body: unknown): Result {
   const phone = str(b.phone, 40);
   const message = str(b.message, 4000);
   const location = oneOf(str(b.location, 60), LOCATIONS);
+  const kind = b.kind === "consultation" ? "consultation" : "inquiry";
   const services = Array.isArray(b.services)
     ? b.services.map((s) => str(s, 60)).filter((s) => (SERVICE_OPTIONS as readonly string[]).includes(s))
+    : [];
+  const times = Array.isArray(b.times)
+    ? b.times.map((s) => str(s, 40)).filter((s) => (CONSULT_TIMES as readonly string[]).includes(s))
     : [];
 
   if (name.length < 2) errors.name = "Please enter your name.";
   if (!EMAIL.test(email)) errors.email = "Please enter a valid email address.";
   if (phone && !/^[+()\-.\s\d]{7,}$/.test(phone)) errors.phone = "Please enter a valid phone number, or leave it blank.";
   if (!location) errors.location = "Please choose where the project is.";
-  if (services.length === 0) errors.services = "Please choose at least one service.";
+  // a consultation request may come before the client knows which service fits
+  if (kind === "inquiry" && services.length === 0) errors.services = "Please choose at least one service.";
   if (message.length < 10) errors.message = "A sentence or two about your space helps us prepare.";
   if (b.consent !== true) errors.consent = "Please confirm we may contact you about your inquiry.";
 
@@ -82,6 +92,9 @@ export function validateInquiry(body: unknown): Result {
   return {
     ok: true,
     data: {
+      kind,
+      format: oneOf(str(b.format, 40), CONSULT_FORMATS),
+      times,
       name,
       email,
       phone,

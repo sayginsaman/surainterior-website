@@ -415,6 +415,12 @@
    "w": 2880,
    "h": 1620,
    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAkAA4BaJZACdADwU9gCeQAA/sxnO/FqMEwmc5qKIxpYUOmB77sXYe41ApieXC7iGTzSaBsT+2SHxWegvyG/ngKibjLcxPWV1FdgYAA="
+  },
+  "biscayne": {
+   "src": "/work/_bands/biscayne.jpg",
+   "w": 2880,
+   "h": 1620,
+   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkAA4BaJYgCdAD6HRE8uQAA8B075r+1E2IMGBMThBT16v3kJZjQLSzQMJuPuMRnH1ZxQ2YwmP/tVpLF+YAA"
   }
  }
 }

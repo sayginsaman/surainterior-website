@@ -8,6 +8,8 @@ const base =
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${base}/`, changeFrequency: "monthly", priority: 1 },
+    { url: `${base}/services`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/consultation`, changeFrequency: "monthly", priority: 0.9 },
     ...projects.map((p) => ({ url: `${base}/work/${p.slug}`, changeFrequency: "yearly" as const, priority: 0.7 })),
   ];
 }

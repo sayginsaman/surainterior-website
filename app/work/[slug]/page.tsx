@@ -67,7 +67,7 @@ export default async function ProjectPage({ params }: Props) {
               {p.summary}
             </p>
             <p className="cta-row" style={{ marginTop: "2.4rem" }} data-reveal>
-              <Link className="btn btn-dark" href="/#contact">
+              <Link className="btn btn-dark" href="/consultation">
                 Start a project like this <span className="btn-arrow" aria-hidden />
               </Link>
               <Link className="btn btn-ghost" href="/#work">

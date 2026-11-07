@@ -97,7 +97,7 @@ const BEATS: SceneBeat[] = [
         Beyond design. <em>Into detail.</em>
       </>
     ),
-    link: { href: "#contact", label: "Book a consultation" },
+    link: { href: "/consultation", label: "Book a consultation" },
   },
 ];
 
@@ -134,7 +134,7 @@ export default function Home() {
                 Residential interiors, kitchens and custom millwork across South Florida. Designed to be built, made to be lived in.
               </p>
               <div className="cta-row">
-                <a className="btn btn-light" href="#contact">
+                <a className="btn btn-light" href="/consultation">
                   Book a consultation
                 </a>
                 <a className="btn btn-ghost-light" href="#work">
@@ -202,6 +202,14 @@ export default function Home() {
             </p>
           </div>
           <Services services={services} pics={servicePics} />
+          <p className="svc-more" data-reveal>
+            <Link className="text-link" href="/services">
+              Explore all services <span aria-hidden>→</span>
+            </Link>
+            <Link className="text-link" href="/consultation">
+              Book a design consultation <span aria-hidden>→</span>
+            </Link>
+          </p>
         </section>
 
         {/* 5 · Selected work */}

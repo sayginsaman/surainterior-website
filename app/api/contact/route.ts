@@ -19,13 +19,20 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 function render(i: Inquiry) {
   const rows: [string, string][] = [
+    ["Request", i.kind === "consultation" ? "Design consultation" : "Project inquiry"],
+    ...(i.kind === "consultation"
+      ? ([
+          ["Consultation format", i.format || "—"],
+          ["Preferred times", i.times.join(", ") || "—"],
+        ] as [string, string][])
+      : []),
     ["Name", i.name],
     ["Email", i.email],
     ["Phone", i.phone || "—"],
     ["Preferred contact", i.contactPref || "—"],
     ["Project location", i.location],
     ["Property type", i.propertyType || "—"],
-    ["Services", i.services.join(", ")],
+    ["Services", i.services.join(", ") || "—"],
     ["Project stage", i.stage || "—"],
     ["Timeline", i.timeline || "—"],
     ["Heard about us", i.source || "—"],
@@ -85,14 +92,14 @@ export async function POST(req: Request) {
   const from = process.env.CONTACT_FROM_EMAIL ?? "SURA INTERIOR <onboarding@resend.dev>";
   const to = process.env.CONTACT_TO_EMAIL ?? site.email;
   try {
-    await sendEmail({ from, to: [to], reply_to: inquiry.email, subject: `New inquiry: ${inquiry.name} · ${inquiry.location}`, text, html });
+    await sendEmail({ from, to: [to], reply_to: inquiry.email, subject: `${inquiry.kind === "consultation" ? "Consultation request" : "New inquiry"}: ${inquiry.name} · ${inquiry.location}`, text, html });
     // Acknowledgement to the client. Failure here must not fail the inquiry.
     await sendEmail({
       from,
       to: [inquiry.email],
       reply_to: to,
-      subject: "We received your inquiry · SURA INTERIOR",
-      text: `Dear ${inquiry.name},\n\nThank you for reaching out. We have received your inquiry and will be in touch shortly to arrange a discovery call.\n\nSURA INTERIOR\n${site.phone}\n${site.email}`,
+      subject: inquiry.kind === "consultation" ? "We received your consultation request · SURA INTERIOR" : "We received your inquiry · SURA INTERIOR",
+      text: `Dear ${inquiry.name},\n\nThank you for reaching out. We have received your ${inquiry.kind === "consultation" ? "consultation request and will be in touch shortly to confirm a time" : "inquiry and will be in touch shortly to arrange a discovery call"}.\n\nSURA INTERIOR\n${site.phone}\n${site.email}`,
     }).catch((e) => console.error("[contact] acknowledgement failed", e));
   } catch (e) {
     console.error("[contact] delivery failed", e);

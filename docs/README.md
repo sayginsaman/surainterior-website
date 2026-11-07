@@ -18,6 +18,7 @@ hareketi, scroll ile ilerliyor (`07`). Kil maket (`05`) ve çerçeveli film
 | [05-build-notes.md](05-build-notes.md) | İlk sürüm (kil maket, artık kullanılmıyor), form, fotoğraf hattı, marka, eksikler |
 | [06-real-film-redesign.md](06-real-film-redesign.md) | İkinci sürüm (çerçeveli film, kaldırıldı); tipografi ve fotoğraf kalite kuralı hâlâ geçerli |
 | [07-immersive-scene.md](07-immersive-scene.md) | **Güncel açılış:** tam ekran sahne, segmentler, kırpma/dissolve kararları, encode |
+| [08-services-consultation.md](08-services-consultation.md) | `/services` ve `/consultation` sayfaları, form genişletmesi, teyit edilecekler |
 | `private/business-internals.md` | Fiyatlar, gelir hedefleri, reklam bütçesi, adres. **Gitignore'da, sadece lokal.** |
 | `reference/` | Tiny Villa ekran görüntüleri, video kare özeti |
 

@@ -313,3 +313,109 @@ export const photo = (slug: string, index = 0) => {
   if (!p) throw new Error(`Unknown project ${slug}`);
   return p.images[index];
 };
+
+/* ───────── services page ───────── */
+
+export type ServiceCard = {
+  slug: string;
+  title: string;
+  blurb: string;
+  items: string[];
+  outcome: string;
+  /** a real project photo, or a studio image from /media/studio */
+  image: { project: string; index: number } | { src: string; w: number; h: number; alt: string };
+};
+
+export const serviceCards: ServiceCard[] = [
+  {
+    slug: "interior-design",
+    title: "Full-Service Interior Design",
+    blurb: "Whole-home interiors taken from first concept to final styling, under one cohesive design vision.",
+    items: services[0].items,
+    outcome: services[0].outcome,
+    image: { project: "biscayne-boulevard-residence", index: 0 },
+  },
+  {
+    slug: "kitchen-bath",
+    title: "Kitchen, Bath & Custom Cabinetry",
+    blurb: "Kitchens, baths, closets and pantries shaped around your routines and drawn for fabrication.",
+    items: services[1].items,
+    outcome: services[1].outcome,
+    image: { project: "pembroke-pines-residence", index: 0 },
+  },
+  {
+    slug: "millwork",
+    title: "Custom Furniture & Millwork",
+    blurb: "Media walls, built-ins and made-to-measure pieces designed for the exact space they live in.",
+    items: services[2].items,
+    outcome: services[2].outcome,
+    image: { project: "boca-raton-residence", index: 0 },
+  },
+  {
+    slug: "space-planning",
+    title: "Space Planning & Design Development",
+    blurb: "Layouts, AutoCAD plans, elevations and 3D visualization that turn ideas into buildable information.",
+    items: [
+      "Existing-space assessment and measured documentation",
+      "Space planning and furniture layouts",
+      "AutoCAD plans, elevations and sections",
+      "Relevant design details for fabricators and installers",
+      "3D visualization and photorealistic renderings",
+      "Design presentations and revisions",
+    ],
+    outcome: "Clear visual and technical information, so every decision can be reviewed before anything is built.",
+    image: { src: "/media/studio/space-planning.jpg", w: 2000, h: 1493, alt: "Printed floor plan, rolled drawings and material samples on a desk" },
+  },
+  {
+    slug: "renovation",
+    title: "Renovation Design & Coordination",
+    blurb: "Finish schedules, design-intent communication and close coordination with your contractor and trades.",
+    items: services[3].items,
+    outcome: services[3].outcome,
+    image: { project: "parkland-residence", index: 0 },
+  },
+  {
+    slug: "furnishing",
+    title: "Furnishing, Lighting & FF&E",
+    blurb: "Furniture, lighting, textiles and accessories selected, sourced and styled to complete the room.",
+    items: services[4].items,
+    outcome: services[4].outcome,
+    image: { project: "fort-lauderdale-kitchen", index: 2 },
+  },
+];
+
+/* ───────── consultation page ───────── */
+
+export const consultationSteps = [
+  {
+    n: "01",
+    title: "Understanding your vision",
+    text: "We talk through your needs, how you live, your preferences and what you want the project to achieve.",
+    image: "/media/studio/expect-vision.jpg",
+  },
+  {
+    n: "02",
+    title: "Professional design guidance",
+    text: "We look at spatial possibilities, design directions and the practical considerations that shape them.",
+    image: "/media/studio/expect-plan.jpg",
+  },
+  {
+    n: "03",
+    title: "Material & finish recommendations",
+    text: "We discuss suitable materials, finishes and lighting for the way the space will be used.",
+    image: "/media/studio/expect-materials.jpg",
+  },
+  {
+    n: "04",
+    title: "Defining the next steps",
+    text: "We outline the likely scope, priorities and which design services fit your project.",
+    image: "/media/studio/expect-next.jpg",
+  },
+];
+
+export const consultationPrep = [
+  "Photos or a short video of the space as it is today",
+  "Floor plans or rough measurements, if you have them",
+  "A few images of interiors you love",
+  "Your timeline and an approximate budget range",
+];

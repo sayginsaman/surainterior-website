@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import {
+  CONSULT_FORMATS,
+  CONSULT_TIMES,
   CONTACT_PREFS,
   LOCATIONS,
   PROPERTY_TYPES,
@@ -13,7 +15,8 @@ import {
 
 type Status = { kind: "idle" } | { kind: "sending" } | { kind: "sent" } | { kind: "error"; message: string };
 
-export function ContactForm({ email }: { email: string }) {
+export function ContactForm({ email, kind = "inquiry" }: { email: string; kind?: "inquiry" | "consultation" }) {
+  const consult = kind === "consultation";
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const startedAt = useRef(0);
@@ -35,6 +38,9 @@ export function ContactForm({ email }: { email: string }) {
       if (v) utm[k] = v;
     }
     const body = {
+      kind,
+      format: fd.get("format"),
+      times: fd.getAll("times"),
       name: fd.get("name"),
       email: fd.get("email"),
       phone: fd.get("phone"),
@@ -77,8 +83,8 @@ export function ContactForm({ email }: { email: string }) {
   if (status.kind === "sent") {
     return (
       <div className="form-done" ref={statusRef} tabIndex={-1} role="status">
-        <p className="label">Inquiry received</p>
-        <h3>Thank you. We&rsquo;ll be in touch to arrange a discovery call.</h3>
+        <p className="label">{consult ? "Request received" : "Inquiry received"}</p>
+        <h3>{consult ? "Thank you. We’ll be in touch to confirm a time for your consultation." : "Thank you. We’ll be in touch to arrange a discovery call."}</h3>
         <p>If it&rsquo;s easier, you can also reach us at <a href={`mailto:${email}`}>{email}</a>.</p>
       </div>
     );
@@ -142,8 +148,35 @@ export function ContactForm({ email }: { email: string }) {
         </label>
       </div>
 
+      {consult && (
+        <>
+          <fieldset className="field chips">
+            <legend>How would you like to meet?</legend>
+            <div>
+              {CONSULT_FORMATS.map((o, i) => (
+                <label key={o} className="chip">
+                  <input type="radio" name="format" value={o} defaultChecked={i === 0} />
+                  <span>{o}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+          <fieldset className="field chips">
+            <legend>Times that usually suit you</legend>
+            <div>
+              {CONSULT_TIMES.map((o) => (
+                <label key={o} className="chip">
+                  <input type="checkbox" name="times" value={o} />
+                  <span>{o}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        </>
+      )}
+
       <fieldset className="field chips" {...aria("services")}>
-        <legend>Services of interest *</legend>
+        <legend>{consult ? "What would you like to discuss?" : "Services of interest *"}</legend>
         <div>
           {SERVICE_OPTIONS.map((o) => (
             <label key={o} className="chip">
@@ -177,7 +210,7 @@ export function ContactForm({ email }: { email: string }) {
       </div>
 
       <label className="field">
-        <span>Tell us about your space *</span>
+        <span>{consult ? "Tell us about your project *" : "Tell us about your space *"}</span>
         <textarea name="message" rows={4} placeholder="The rooms, what isn't working today, what you'd love it to feel like." required {...aria("message")} />
         {err("message")}
       </label>
@@ -208,7 +241,7 @@ export function ContactForm({ email }: { email: string }) {
 
       <div className="form-foot">
         <button className="btn btn-dark" type="submit" disabled={status.kind === "sending"}>
-          {status.kind === "sending" ? "Sending…" : "Send inquiry"}
+          {status.kind === "sending" ? "Sending…" : consult ? "Request a consultation" : "Send inquiry"}
           <span className="btn-arrow" aria-hidden />
         </button>
         <div className="form-status" ref={statusRef} tabIndex={-1} aria-live="polite">

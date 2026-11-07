@@ -1,18 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LogoMark, Wordmark } from "./Logo";
 
 const NAV = [
   { href: "/#studio", label: "Studio" },
-  { href: "/#services", label: "Services" },
+  { href: "/services", label: "Services" },
   { href: "/#work", label: "Work" },
   { href: "/#process", label: "Process" },
   { href: "/#about", label: "About" },
 ];
 
 export function Header({ solid = false }: { solid?: boolean }) {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -68,12 +70,12 @@ export function Header({ solid = false }: { solid?: boolean }) {
       </Link>
       <nav className="nav" aria-label="Primary">
         {NAV.map((n) => (
-          <a key={n.href} href={n.href}>
+          <a key={n.href} href={n.href} aria-current={pathname === n.href ? "page" : undefined}>
             {n.label}
           </a>
         ))}
       </nav>
-      <a className="btn btn-dark btn-sm header-cta" href="/#contact">
+      <a className="btn btn-dark btn-sm header-cta" href="/consultation" aria-current={pathname === "/consultation" ? "page" : undefined}>
         Book a consultation
       </a>
       <button className="menu-btn" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen((o) => !o)}>
@@ -89,8 +91,11 @@ export function Header({ solid = false }: { solid?: boolean }) {
               {n.label}
             </a>
           ))}
+          <a href="/consultation" onClick={() => setOpen(false)}>
+            <small>06</small>Consultation
+          </a>
           <a href="/#contact" onClick={() => setOpen(false)}>
-            <small>06</small>Contact
+            <small>07</small>Contact
           </a>
         </nav>
       </div>
