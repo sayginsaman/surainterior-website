@@ -29,7 +29,7 @@ Pembroke Pines'ın açılış dolly'si (`a`) çıkarıldı. Bu turda 6 klip daha
 üretildi (~80 kredi). Parkland daha klasik
 durduğu için tura alınmadı. Final cümlesi "Beyond design. Into detail."
 artık stüdyonun imzası olarak pencere ışığında, "Book a consultation" linkiyle.
-Alt şeritteki proje adı, o an hangi projedeysen onu gösteriyor.
+(Alt şeritteki proje adı ve ilerleme çubuğu kullanıcı isteğiyle kaldırıldı.)
 
 ### Her projede daha uzun kalmak (aynı gün, ikinci geri bildirim)
 
@@ -112,8 +112,9 @@ direkt farklı bir eve geçiyor."
   edilmiş ilk kare (K0'ın kendisi).
 - `prefers-reduced-motion`: video yerine poster kareler gösteriliyor, metinler aynı.
 - Telefon: aynı film 9:16 orta kırpım (`-mobile.mp4`, 720×1280), metin altta.
-- Alt şeritte küçük bir not var: "Camera motion created from photographs of
-  the finished room". Proje gerçek, hareket modelin.
+- Alttaki not şeridi ("Camera motion created from photographs…") ve ilerleme
+  çubuğu kullanıcı isteğiyle kaldırıldı. Proje adları yalnızca metinlerin
+  üst etiketlerinde geçiyor.
 
 ## Encode
 
