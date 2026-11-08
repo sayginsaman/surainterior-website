@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Encode_Sans_Condensed, Jost } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/lib/content";
 import { Attribution } from "@/components/Attribution";
 import "./globals.css";
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <Attribution />
         {children}
+        <Analytics />
       </body>
     </html>
   );
