@@ -10,6 +10,7 @@
     "photos": "node scripts/process-photos.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lenis": "^1.3.27",
     "next": "^16.4.5",
     "react": "^19.3.1",
