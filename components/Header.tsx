@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { site } from "@/lib/site";
 import { LogoMark, Wordmark } from "./Logo";
 
 const NAV = [
@@ -98,6 +99,16 @@ export function Header({ solid = false }: { solid?: boolean }) {
             <small>07</small>Contact
           </a>
         </nav>
+        <div className="mobile-menu-foot">
+          <a className="btn btn-light" href="/consultation" onClick={() => setOpen(false)}>
+            Book a consultation
+          </a>
+          <p>
+            <a href={site.phoneHref}>{site.phone}</a>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
+          <p className="label">{site.city}</p>
+        </div>
       </div>
     </header>
   );

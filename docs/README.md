@@ -20,6 +20,7 @@ hareketi, scroll ile ilerliyor (`07`). Kil maket (`05`) ve çerçeveli film
 | [07-immersive-scene.md](07-immersive-scene.md) | **Güncel açılış:** tam ekran sahne, segmentler, kırpma/dissolve kararları, encode |
 | [08-services-consultation.md](08-services-consultation.md) | `/services` ve `/consultation` sayfaları, form genişletmesi, teyit edilecekler |
 | [09-about-page.md](09-about-page.md) | `/about` sayfası, görsel seçimleri, teyit edilecekler |
+| [10-mobile-pass.md](10-mobile-pass.md) | Telefon ve tablet geçişi: menü, dokunma alanları, swipe rail'ler, sahne uzunluğu |
 | `private/business-internals.md` | Fiyatlar, gelir hedefleri, reklam bütçesi, adres. **Gitignore'da, sadece lokal.** |
 | `reference/` | Tiny Villa ekran görüntüleri, video kare özeti |
 

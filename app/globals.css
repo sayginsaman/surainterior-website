@@ -406,7 +406,7 @@ em {
   display: grid;
   gap: 0.2rem;
 }
-.mobile-menu a {
+.mobile-menu nav a {
   font-family: var(--font-display);
   font-weight: 300;
   font-size: clamp(2.6rem, 11vw, 4rem);
@@ -1546,7 +1546,7 @@ textarea[aria-invalid="true"] {
     --header-h: 64px;
   }
   .scene {
-    height: calc(var(--film, 63) * 30svh + 120svh);
+    height: calc(var(--film, 63) * 24svh + 120svh);
   }
   .scene-shade {
     background: linear-gradient(0deg, rgba(16, 13, 11, 0.86) 0%, rgba(16, 13, 11, 0.42) 42%, rgba(16, 13, 11, 0) 66%),
@@ -2315,5 +2315,204 @@ textarea[aria-invalid="true"] {
   .label-center::before,
   .label-center::after {
     width: 2.5rem;
+  }
+}
+
+/* ───────── phones and tablets: mobile pass ───────── */
+
+/* menu: the nav fills the top, contact and the booking button sit at the bottom */
+.mobile-menu:not([hidden]) {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.mobile-menu-foot {
+  margin-top: auto;
+  padding-top: 2.4rem;
+  display: grid;
+  gap: 0.9rem;
+}
+.mobile-menu-foot .btn {
+  width: 100%;
+}
+.mobile-menu-foot p:not(.label) {
+  display: grid;
+}
+.mobile-menu-foot p a {
+  padding: 0.55rem 0;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: rgba(249, 245, 239, 0.85);
+}
+.mobile-menu-foot .label {
+  color: rgba(249, 245, 239, 0.5);
+}
+@media (max-height: 720px) {
+  .mobile-menu nav a {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+  .mobile-menu-foot {
+    padding-top: 1.6rem;
+  }
+}
+
+/* tablets: two even columns with a light stagger instead of the wide 12-column offset */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .work-card:nth-child(odd),
+  .work-card:nth-child(even) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+  .work-card:nth-child(even) {
+    margin-top: 12vh;
+  }
+}
+
+@media (max-width: 760px) {
+  /* touch targets: at least 44px without changing how the links look */
+  .text-link,
+  .contact-lines a {
+    position: relative;
+  }
+  .text-link::after,
+  .contact-lines a::after {
+    content: "";
+    position: absolute;
+    inset: -0.75rem -0.4rem;
+  }
+  .footer-cols p:not(.label) a {
+    display: inline-block;
+    padding: 0.55rem 0;
+  }
+  .consent input {
+    width: 22px;
+    height: 22px;
+    margin-top: 0;
+  }
+
+  /* small caps text: nothing under ~10.5px on a phone */
+  .field > span,
+  .field legend,
+  .facts dt,
+  .work-meta p,
+  .consult-intro-by {
+    font-size: 0.7rem;
+  }
+  .svc-media figcaption,
+  .svc-detail-media figcaption,
+  .studio-intro-media figcaption {
+    font-size: 0.66rem;
+  }
+
+  /* long serif paragraphs at a phone size */
+  .project-summary,
+  .consult-intro-text {
+    font-size: 1.5rem;
+    line-height: 1.32;
+  }
+  .founder-lede {
+    font-size: 1.3rem;
+  }
+  .svc-verbs {
+    white-space: nowrap;
+    font-size: clamp(0.56rem, 2.9vw, 0.68rem);
+    letter-spacing: 0.2em;
+  }
+
+  /* selected work: a swipeable rail instead of eight full-height cards */
+  .work-grid {
+    display: flex;
+    gap: 0.9rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 0 var(--gutter) 0.4rem;
+    scrollbar-width: none;
+  }
+  .work-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .work-card,
+  .work-card:nth-child(n) {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    margin-top: 0;
+  }
+  .js .work-grid [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  /* services page: the overview cards become a rail too, the details follow below */
+  .svc-cards {
+    display: flex;
+    gap: 0.9rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 0 var(--gutter) 0.4rem;
+    scrollbar-width: none;
+  }
+  .svc-cards::-webkit-scrollbar {
+    display: none;
+  }
+  .svc-cards > li {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+  .js .svc-cards [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  /* stacked, full-width calls to action */
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-row .btn {
+    width: 100%;
+  }
+}
+
+/* phones held sideways: the film keeps its copy inside the short screen */
+@media (max-height: 500px) and (orientation: landscape) {
+  .scene-hero .display {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    margin-bottom: 0.6rem;
+  }
+  .scene-hero .lede {
+    display: none;
+  }
+  .scene-hero,
+  .scene-beat-left,
+  .scene-beat-right {
+    bottom: 1.6rem;
+  }
+  .beat-title,
+  .scene-beat-center .beat-title {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    margin-bottom: 0.5rem;
+  }
+  .beat-text {
+    display: none;
+  }
+  .scene-hero .cta-row {
+    flex-direction: row;
+  }
+  .scene-hero .cta-row .btn {
+    width: auto;
   }
 }
