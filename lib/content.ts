@@ -161,6 +161,31 @@ export type Project = {
 
 const raw: Omit<Project, "images">[] = [
   {
+    // "Armani Casa" is the building's name. Use it as the location only, never as
+    // a brand association (see docs/02). Source photos were 1600 px, upscaled 4K.
+    slug: "armani-casa-residence",
+    title: "Sunny Isles Residence",
+    location: "Armani Casa Residences, Sunny Isles Beach, FL",
+    year: 2023,
+    category: "Condo interior",
+    scope: ["Interior design", "Furnishings (FF&E)", "Styling"],
+    summary:
+      "A high-floor residence furnished in a quiet palette of ivory, oak and soft grey, kept low so the floor-to-ceiling glass and the city beyond lead every room: a long sectional and swivel chairs, an oak console and sideboard, and art along the gallery corridor.",
+    feature: true,
+    alts: [
+      "Ivory sectional and an oval marble coffee table facing a wall of floor-to-ceiling windows",
+      "Long living room with an oak sideboard, swivel chairs and a city view on three sides",
+      "Sectional sofa and oak console table below the television wall",
+      "Living room opening onto a white lacquer kitchen",
+      "White lacquer kitchen with a stone island",
+      "Kitchen island, white lacquer cabinetry and built-in ovens beside the windows",
+      "Gallery corridor lined with framed art",
+      "Bedroom with an upholstered bench and a wide city view",
+      "Bathroom in wood-grain stone with a glass partition and a soaking tub",
+      "Ceiling cove with recessed lights above the window wall",
+    ],
+  },
+  {
     slug: "pembroke-pines-residence",
     title: "Pembroke Pines Residence",
     location: "Pembroke Pines, FL",
@@ -399,7 +424,7 @@ export const serviceCards: ServiceCard[] = [
     blurb: "Furniture, lighting, textiles and accessories selected, sourced and styled to complete the room.",
     items: services[4].items,
     outcome: services[4].outcome,
-    image: { project: "fort-lauderdale-kitchen", index: 2 },
+    image: { project: "armani-casa-residence", index: 0 },
   },
 ];
 

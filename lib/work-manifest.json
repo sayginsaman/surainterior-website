@@ -1,4 +1,66 @@
 {
+ "armani-casa-residence": [
+  {
+   "src": "/work/armani-casa-residence/01.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAsAA4BaJZQC7AEORjlK+wAA/ucYY3OVW4WaTyM5C2w86mSul0KqEUIAj9Z5iACTkANkoAKVwAAA"
+  },
+  {
+   "src": "/work/armani-casa-residence/02.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAsAA4BaJZwAAucNGUqMAAD+3vI1+TOeTVgwZW6l1D/DnEilhqZFZxV8nWWWFRW3u3JCwscBuMOAAAA="
+  },
+  {
+   "src": "/work/armani-casa-residence/03.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJZwAAxfxWQwYgpCAAP7Upviwt0npL8qRkoXefkyqLnK0GTRzJ3UsEuauwy9oas6YB7pQsKQTlbKhfQAAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/04.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQAAsAA4BaJZwAAuXH3LAA/ufIB4L952QEiXkIcdTCqWyaAzZIn9b1g0Dxr+vHSqwCgAAA"
+  },
+  {
+   "src": "/work/armani-casa-residence/05.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQAAsAA4BaJaQAAvmFbAqsAAD+xQeDMTyZiKoY8GLJtBZrHM/T3XCAAAA="
+  },
+  {
+   "src": "/work/armani-casa-residence/06.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAsAA4BaJaQAApNA6X3gAAD+05WM3ze8KrpmmG16Sal+7dt+BlMBUA7QatTZ08M7jf+7R/3mAAAA"
+  },
+  {
+   "src": "/work/armani-casa-residence/07.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoQAAsAA4BaJZwABDOAAP7tLqOzNtaVdkAAAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/08.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAA4BaJZQC7AD0pi6tUWQA/udTjRJUSui49bIAJkeLAzX4kChWpGlmVikn3sW6AS7KlXysdtff0AwuCoAA"
+  },
+  {
+   "src": "/work/armani-casa-residence/09.jpg",
+   "w": 2200,
+   "h": 1470,
+   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAsAA4BaJZwAAl0lzaBnAAD9390upgis47bxuGK8/5pVgvm9q7PSTcsEajI9ki5AAA=="
+  },
+  {
+   "src": "/work/armani-casa-residence/10.jpg",
+   "w": 1650,
+   "h": 2200,
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JQBOmXkBRCUn54GtZymAA/tHd4KlmWull5xY+kred/bDNsjVvqLURlWsjyRjBmj9cqNO64fo/Nmt1fBhUqcQ9OW8t+xUjI23o4OzHUEPBunfbjDxD8YIGrJNkEckcHbmfgAAA"
+  }
+ ],
  "boca-raton-residence": [
   {
    "src": "/work/boca-raton-residence/01.jpg",
