@@ -56,6 +56,39 @@ direkt farklı bir eve geçiyor."
 - Toplam boyut: masaüstü 37 MB, mobil 14 MB (9 segment). Sırayla yüklendiği
   için açılışta yalnızca `f` + `f2` iniyor (~10 MB masaüstü).
 
+### Armani Casa turun ikinci durağı (2026-11-08)
+
+Kullanıcı: "Armani Casa fotoğraflarını kullanmamışsın, work'e ve hero'ya
+koy, öncekiler gibi videolu. Çok iyi bir proje."
+
+- **Fotoğraflar:** 23 WhatsApp JPEG (1600×1066), 5'i kopya. Daha önce
+  çözünürlük yüzünden dışarıda kalmıştı. Seçilen 10 kare Higgsfield
+  `bytedance_image_upscale` ile 4K'ya (4096×2737) büyütüldü, 2 kredi/kare.
+  Ayrıntı karşılaştırması temiz: nesne eklemiyor, sadece keskinleştiriyor.
+  Büyütülmüş kaynaklar `assets/armani-casa-hd/` (gitignore'da).
+- **Ad:** "Sunny Isles Residence", konum "Armani Casa Residences, Sunny
+  Isles Beach, FL". Bina adı yalnızca konum olarak geçiyor (bkz. `02`).
+  Kapsam "Interior design · Furnishings (FF&E) · Styling": portfolyoda bu
+  proje FF&E ve styling olarak geçiyor; mutfak ve banyo bitişlerini
+  sahiplenmiyoruz.
+- **Sahnedeki yeri:** Fort Lauderdale açılışından hemen sonra, ikinci
+  proje. Gece ışıklı ceviz mutfaktan gün ışığıyla dolu beyaz salona
+  dissolve.
+  - `ac` (8 sn, varyant 2): ac-02'nin 16:9 kırpımından (sağ kenardaki
+    yürüteç kadraj dışında kalsın diye 3712 px genişlik) salonun içine
+    doğru ilerleyip kanepenin üstünden yükselen, panoramik cam duvarda
+    biten hareket. En büyük kare farkı 7.3/255, kesik yok.
+  - `ac2` (8 sn, varyant 1): `ac`'nin gerçek son karesinden başlıyor, cam
+    duvar boyunca sağa kayma. En büyük kare farkı 4.1/255; birleşim farkı
+    (ac son kare → ac2 ilk kare) 1.8/255.
+  - Maliyet: 10 büyütme + 4 klip, toplam 84 kredi.
+- Toplam boyut (11 segment): masaüstü 44 MB, mobil 16 MB. Sırayla
+  yüklendiği için açılış etkilenmiyor.
+- Metin: "Furnished for the view." (sağ hizalı).
+- Sahne 2400vh → 3000vh (telefonda 2000 → 2500svh). Metin aralıkları yeni
+  süreye göre yeniden ölçeklendi; her proje ekranda eskisi kadar scroll
+  mesafesi kaplıyor.
+
 ## İlk karar (Pembroke Pines tek sahne)
 
 - **Sahne:** Pembroke Pines Residence mutfağı. Elimizde aynı odanın 12 gerçek

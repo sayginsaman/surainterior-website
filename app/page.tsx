@@ -18,6 +18,9 @@ const SEGMENTS: SceneSegment[] = [
   // each project is two clips; the second starts on the first one's last frame
   { id: "f", seconds: 8 },
   { id: "f2", seconds: 8 },
+  // Armani Casa: down the living room and up over the sofa, then along the glass
+  { id: "ac", seconds: 8, blend: true },
+  { id: "ac2", seconds: 8 },
   // the media-wall glide is 3.2 s long; give it more scroll so it plays slower
   { id: "m", seconds: 5, blend: true },
   // ends in a quicker push to the lit niche: more scroll keeps it calm
@@ -32,8 +35,8 @@ const SEGMENTS: SceneSegment[] = [
 const BEATS: SceneBeat[] = [
   {
     id: "light",
-    from: 0.075,
-    to: 0.22,
+    from: 0.065,
+    to: 0.175,
     align: "left",
     kicker: "Fort Lauderdale Residence",
     title: (
@@ -45,9 +48,23 @@ const BEATS: SceneBeat[] = [
     link: { href: "/work/fort-lauderdale-kitchen", label: "View the project" },
   },
   {
+    id: "view",
+    from: 0.222,
+    to: 0.345,
+    align: "right",
+    kicker: "Armani Casa Residences · Sunny Isles",
+    title: (
+      <>
+        Furnished for <em>the view.</em>
+      </>
+    ),
+    text: "Ivory, oak and soft grey, kept low and quiet, so the floor-to-ceiling glass and the city beyond lead every room.",
+    link: { href: "/work/armani-casa-residence", label: "View the project" },
+  },
+  {
     id: "millwork",
-    from: 0.29,
-    to: 0.435,
+    from: 0.422,
+    to: 0.537,
     align: "right",
     kicker: "Boca Raton Residence",
     title: (
@@ -60,8 +77,8 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "detail",
-    from: 0.52,
-    to: 0.65,
+    from: 0.605,
+    to: 0.709,
     align: "left",
     kicker: "Biscayne Boulevard Residence",
     title: (
@@ -74,8 +91,8 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "kitchens",
-    from: 0.7,
-    to: 0.81,
+    from: 0.749,
+    to: 0.836,
     align: "right",
     kicker: "Pembroke Pines Residence",
     title: (
@@ -88,7 +105,7 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "finale",
-    from: 0.845,
+    from: 0.865,
     to: 0.95,
     align: "center",
     kicker: "SURA INTERIOR · South Florida",
