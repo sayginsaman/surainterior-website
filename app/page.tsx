@@ -10,17 +10,28 @@ import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 
-// The opening scene: a walk through four finished projects, full screen,
+// The opening scene: a walk through five finished projects, full screen,
 // driven by scroll. Every segment starts on a real photograph of the room
-// (16:9 crops of the project photos); b→c share a frame, the rest dissolve.
+// (16:9 crops of the project photos) or on the previous clip's last frame;
+// segments marked blend dissolve, the rest hand off on a shared frame.
+// `seconds` is the clip length (scroll weight), so the camera keeps one pace.
 // See docs/07.
 const SEGMENTS: SceneSegment[] = [
-  // each project is two clips; the second starts on the first one's last frame
+  // each project is at least two clips; the next starts on the previous one's last frame
   { id: "f", seconds: 8 },
   { id: "f2", seconds: 8 },
-  // Armani Casa: down the living room and up over the sofa, then along the glass
+  // Armani Casa, a walk through the whole apartment: down the living room and
+  // over the sofa, along the glass, turn to the room, across to the kitchen,
+  // out to the gallery corridor and down it, then the bedroom and its view
   { id: "ac", seconds: 8, blend: true },
   { id: "ac2", seconds: 8 },
+  { id: "ac3", seconds: 6.58 },
+  { id: "ac4", seconds: 8 },
+  { id: "ac5", seconds: 6.58 },
+  { id: "ac6", seconds: 6.58 },
+  { id: "ac7", seconds: 8 },
+  { id: "ac8", seconds: 6.58, blend: true },
+  { id: "ac9", seconds: 8 },
   // the media-wall glide is 3.2 s long; give it more scroll so it plays slower
   { id: "m", seconds: 5, blend: true },
   // ends in a quicker push to the lit niche: more scroll keeps it calm
@@ -35,8 +46,9 @@ const SEGMENTS: SceneSegment[] = [
 const BEATS: SceneBeat[] = [
   {
     id: "light",
-    from: 0.065,
-    to: 0.175,
+    seg: "f",
+    from: 5.45,
+    to: 14.7,
     align: "left",
     kicker: "Fort Lauderdale Residence",
     title: (
@@ -49,8 +61,9 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "view",
-    from: 0.222,
-    to: 0.345,
+    seg: "ac",
+    from: 2.6,
+    to: 13,
     align: "right",
     kicker: "Armani Casa Residences · Sunny Isles",
     title: (
@@ -62,9 +75,38 @@ const BEATS: SceneBeat[] = [
     link: { href: "/work/armani-casa-residence", label: "View the project" },
   },
   {
+    id: "gallery",
+    seg: "ac6",
+    from: 2.5,
+    to: 12,
+    align: "left",
+    kicker: "Armani Casa Residences · Gallery",
+    title: (
+      <>
+        One palette, <em>room to room.</em>
+      </>
+    ),
+    text: "The same ivory, oak and soft grey carry from the living room past the kitchen and along the gallery, so the whole home reads as one.",
+  },
+  {
+    id: "rest",
+    seg: "ac9",
+    from: 0.6,
+    to: 7.4,
+    align: "left",
+    kicker: "Armani Casa Residences · Bedroom",
+    title: (
+      <>
+        Rest, with <em>the horizon in view.</em>
+      </>
+    ),
+    text: "Soft whites, an upholstered bench and oak nightstands, kept low so the bedroom opens to the sky.",
+  },
+  {
     id: "millwork",
-    from: 0.422,
-    to: 0.537,
+    seg: "m",
+    from: 3.4,
+    to: 13.1,
     align: "right",
     kicker: "Boca Raton Residence",
     title: (
@@ -77,8 +119,9 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "detail",
-    from: 0.605,
-    to: 0.709,
+    seg: "s",
+    from: 4.8,
+    to: 13.5,
     align: "left",
     kicker: "Biscayne Boulevard Residence",
     title: (
@@ -91,8 +134,9 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "kitchens",
-    from: 0.749,
-    to: 0.836,
+    seg: "b",
+    from: 2.3,
+    to: 9.6,
     align: "right",
     kicker: "Pembroke Pines Residence",
     title: (
@@ -105,8 +149,9 @@ const BEATS: SceneBeat[] = [
   },
   {
     id: "finale",
-    from: 0.865,
-    to: 0.95,
+    seg: "d",
+    from: 0.3,
+    to: 7.4,
     align: "center",
     kicker: "SURA INTERIOR · South Florida",
     title: (

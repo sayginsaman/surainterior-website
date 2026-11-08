@@ -89,6 +89,39 @@ koy, öncekiler gibi videolu. Çok iyi bir proje."
   süreye göre yeniden ölçeklendi; her proje ekranda eskisi kadar scroll
   mesafesi kaplıyor.
 
+### Armani Casa: bütün evin içinden yürüyüş (2026-11-08, ikinci tur)
+
+Kullanıcı: "Armani Casa'dan daha fazla görüntü kullanalım, video oluşturup
+daha scene gibi olsun, sanki gerçekten bütün evin içinden geçiyormuşuz gibi."
+
+Rota gerçek fotoğraflar arasında kuruldu. Her klip ya bir önceki klibin
+gerçek son karesinden ya da bir fotoğraftan başlıyor ve bir sonraki
+fotoğrafta bitiyor (start + end keyframe), bu yüzden birleşimler görünmüyor.
+Fotoğraf numaraları WhatsApp dosya adındaki sıra.
+
+| Segment | Başlangıç → Bitiş | Hareket | Bitiş eşleşmesi |
+|---|---|---|---|
+| `ac` | 08 AM (salon, geniş) | salona yürüyüş, kanepenin üstünden cama | – |
+| `ac2` | `ac` son kare | cam duvar boyunca sağa | – |
+| `ac3` | `ac2` son kare → (8) | camdan dönüp salonu ve mutfağı açıyor | 3.6/255 |
+| `ac4` | (8) → (7) | salonun karşısına, mutfak adasına | 2.0/255 |
+| `ac5` | (7) → (5) | adadan geri çekilip galeri koridorunun girişine dönüş | 3.4/255 |
+| `ac6` | (5) → (4) | koridora giriş | 2.2/255 |
+| `ac7` | (4) | koridor boyunca, tabloların yanından | – |
+| `ac8` | (9) → (6) | yatak odasına giriş, yatağa ve camlara dönüş (koridordan dissolve) | – |
+| `ac9` | (6) | yatağın ayak ucundan cama ve manzaraya | – |
+
+- Koridor → yatak odası arasında bir kapı var, fotoğraflar birbirinden çok
+  uzak; orada scroll altında dissolve.
+- Koridorda kamera tablolara yaklaştıkça tabloların ayrıntılarını model
+  dolduruyor (fotoğraflarda küçük görünüyorlar).
+- (9)'un büyütmesi takıldı (ilk iş başarısız, ikincisi çok geç bitti);
+  beklememek için `ac8`'in başlangıç karesi 1600 px orijinalden kırpıldı.
+- Metinler: salon "Furnished for the view.", koridor "One palette, room to
+  room.", yatak odası "Rest, with the horizon in view." Sadece mobilya,
+  palet ve styling'den bahsediyor.
+- Armani Casa bölümü artık ~66 sn film (sahnenin yarısı). Sahne ~4800vh.
+
 ## İlk karar (Pembroke Pines tek sahne)
 
 - **Sahne:** Pembroke Pines Residence mutfağı. Elimizde aynı odanın 12 gerçek
@@ -126,20 +159,27 @@ koy, öncekiler gibi videolu. Çok iyi bir proje."
 
 `components/Scene.tsx`, sahne verisi `app/page.tsx` (`SEGMENTS`, `BEATS`).
 
-- `.scene` 1000vh (mobilde 900svh). İçinde yapışkan, tam ekran bir sahne var.
-- Scroll ilerlemesinin 0–0.94 aralığı filmi oynatıyor. Segmentler süreye göre
-  ağırlıklı, böylece kamera hızı sabit kalıyor. `blend: true` olan segment
-  bir öncekiyle %4.5'lik bir aralıkta üst üste biniyor ve opaklıkla
-  dissolve ediliyor. Aynı kareyi paylaşanlarda (b → c) video doğrudan değişiyor.
+- **Yükseklik filmden geliyor:** `Scene` toplam saniyeyi `--film` olarak
+  veriyor; `.scene` = `--film × 36vh + 150vh` (telefonda `× 30svh + 120svh`).
+  Klip eklemek sahneyi kendiliğinden uzatıyor, hiçbir sayı elle
+  değişmiyor.
+- **Geçişler ekran yüksekliğiyle ölçülüyor** (`Scene.tsx` başı): hero uçuşu
+  1.25, dissolve 1, metin giriş/çıkış 0.8, çıkış 1.4 ekran. Önceden bunlar
+  toplam scroll'un yüzdesiydi, sahne uzayınca geçişler de uzuyordu.
+- Film, çıkıştan önceki tüm scroll'u kaplıyor. Segmentler süreye göre
+  ağırlıklı (`seconds` = klip uzunluğu), böylece kamera hızı sabit kalıyor.
+  `blend: true` olan segment bir öncekiyle üst üste biniyor ve opaklıkla
+  dissolve ediliyor. Kare paylaşanlarda video doğrudan değişiyor.
+- **Metin zamanlaması segmente bağlı:** her beat `seg` + o segmentin
+  başından saniye (`from`/`to`). Önüne klip eklenince yerinden kaymıyor.
 - Karartma (scrim) o an görünen metnin hizasını takip ediyor (sol, sağ, orta).
   Header'ın açık/koyu tonu için `data-tone` sahnenin medya katmanında; sahne
   küçülünce header tekrar koyu yazıya dönüyor.
 - **Hero:** Başlık scroll ile büyüyüp bulanıklaşarak kayboluyor; kamera
   yazının içinden odaya girer gibi.
-- **Beats:** 4 metin bloğu, her biri kendi ilerleme aralığında. Derinlikten
-  geliyor (perspective + translateZ + blur), yukarı doğru çıkıyor. Hizalamalar
-  sol, sağ, sol, orta. Sonuncusu marka cümlesi "Beyond design. Into detail."
-- **Çıkış:** Son %6'da sahne %88'e küçülüyor ve köşeleri yuvarlanıyor; krem
+- **Beats:** Derinlikten geliyor (perspective + translateZ + blur), yukarı
+  doğru çıkıyor. Sonuncusu marka cümlesi "Beyond design. Into detail."
+- **Çıkış:** Son 1.4 ekranda sahne %88'e küçülüyor ve köşeleri yuvarlanıyor; krem
   sayfa çevresinden görünüyor, ardından stüdyo bölümü geliyor.
 - Klipler sırayla yükleniyor: aktif segment ve bir sonraki. Poster = encode
   edilmiş ilk kare (K0'ın kendisi).
