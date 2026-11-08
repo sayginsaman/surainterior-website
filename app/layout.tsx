@@ -51,6 +51,7 @@ const jsonLd = {
   address: { "@type": "PostalAddress", addressLocality: "Boca Raton", addressRegion: "FL", addressCountry: "US" },
   areaServed: site.serviceArea.map((name) => ({ "@type": "Place", name })),
   founder: { "@type": "Person", name: "Sura Kilic", hasCredential: "PhD in Interior Architecture" },
+  sameAs: [site.instagram],
   knowsAbout: ["Interior design", "Kitchen design", "Custom cabinetry", "Millwork", "Space planning", "FF&E"],
 };
 

@@ -1368,6 +1368,21 @@ textarea[aria-invalid="true"] {
 .footer-cols a:hover {
   color: var(--taupe);
 }
+.footer-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+.footer-ig svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex: none;
+  transition: transform 0.5s var(--ease);
+}
+.footer-ig:hover svg {
+  transform: rotate(-8deg) scale(1.08);
+}
 .footer-base {
   display: flex;
   justify-content: space-between;
@@ -2385,8 +2400,12 @@ textarea[aria-invalid="true"] {
     inset: -0.75rem -0.4rem;
   }
   .footer-cols p:not(.label) a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 0.55rem 0;
+  }
+  .footer-ig {
+    margin-top: 0;
   }
   .consent input {
     width: 22px;

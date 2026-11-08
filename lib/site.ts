@@ -12,6 +12,8 @@ export const site = {
   phone: "+1 (267) 770-2747",
   phoneHref: "tel:+12677702747",
   email: "suramimarlik@gmail.com",
+  instagram: "https://www.instagram.com/surainterior_/",
+  instagramHandle: "@surainterior_",
   serviceArea: ["Boca Raton", "Delray Beach", "Boynton Beach", "Palm Beach County", "Broward", "Miami-Dade"],
   intro:
     "SURA INTERIOR creates thoughtfully designed residential interiors that balance functionality, craftsmanship and timeless aesthetics. From initial concepts and space planning to custom details, material selection and project coordination, we bring every space together through a cohesive design vision.",

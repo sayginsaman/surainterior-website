@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/content";
+import { InstagramIcon } from "./InstagramIcon";
 import { LogoMark, Wordmark } from "./Logo";
 
 export function Footer() {
@@ -29,6 +30,18 @@ export function Footer() {
           </p>
           <p>
             <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
+          <p>
+            <a
+              className="footer-ig"
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Instagram, ${site.instagramHandle} (opens in a new tab)`}
+            >
+              <InstagramIcon />
+              <span>{site.instagramHandle}</span>
+            </a>
           </p>
         </div>
         <div>
